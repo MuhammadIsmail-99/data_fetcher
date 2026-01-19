@@ -1,0 +1,3793 @@
+{
+  "listings": [
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15774844",
+        "category_id": 1,
+        "property_type": "Apartment",
+        "price": {
+          "value": 7800000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Exclusive | Largest Layout | Sea - Dubai Eye View",
+        "location": {
+          "id": "11540",
+          "full_name": "Jumeirah Gate Tower 1, The Address Jumeirah Resort and Spa, Jumeirah Beach Residence, Dubai",
+          "coordinates": {
+            "lat": 25.072513580322266,
+            "lon": 55.12628936767578
+          },
+          "slug": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1",
+          "path": "1.67.8795.11540",
+          "type": "TOWER",
+          "name": "Jumeirah Gate Tower 1",
+          "path_name": "Dubai, Jumeirah Beach Residence, The Address Jumeirah Resort and Spa"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6SF82QKP6ZW5J464QN1VR/7ed3ad1f-6533-49ee-82ff-913e6c8a695e/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6SF82QKP6ZW5J464QN1VR/7ed3ad1f-6533-49ee-82ff-913e6c8a695e/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": true,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "notSelected",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "2",
+        "bathrooms": "3",
+        "size": {
+          "value": 1474,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1-15774844",
+        "reference": "HI-S-009741",
+        "listed_date": "2025-12-05T12:12:00Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009741%0AType%3A+Apartment%0APrice%3A+7%2C800%2C000+AED+%0ALocation%3A+Jumeirah+Gate+Tower+1+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774844%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 24,
+        "amenities": [
+          "BA",
+          "BR",
+          "BW",
+          "AC",
+          "PR",
+          "CO",
+          "CP",
+          "BK",
+          "LB",
+          "SE",
+          "SY",
+          "SP"
+        ],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 1,
+        "has_view_360": false,
+        "rsp": 85.53277,
+        "rss": 85.53277,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "7135261170",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "featured",
+        "listing_level_label": "featured",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "67",
+            "name": "Jumeirah Beach Residence",
+            "type": "COMMUNITY",
+            "slug": "jumeirah-beach-residence",
+            "slug_en": "jumeirah-beach-residence",
+            "level": "1"
+          },
+          {
+            "id": "8795",
+            "name": "The Address Jumeirah Resort and Spa",
+            "type": "SUBCOMMUNITY",
+            "slug": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa",
+            "slug_en": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa",
+            "level": "2"
+          },
+          {
+            "id": "11540",
+            "name": "Jumeirah Gate Tower 1",
+            "type": "TOWER",
+            "slug": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1",
+            "slug_en": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1",
+            "level": "3"
+          }
+        ],
+        "description": "<p>Hamptons International is pleased to present this elegant 2-bedroom apartment for sale in The Address Beach Resort, Jumeirah Gate Tower 1, JBR, offering luxury living with contemporary interiors, stunning sea views, premium amenities, private beach access and an unbeatable waterfront lifestyle.</p><p><br></p><p><strong>Property Features: </strong></p><p><br></p><p>- Luxurious 2-bedroom apartment</p><p>- Size: 1,474.98 sqft</p><p>- Above 20<sup>th</sup> floor</p><p>- Full view of sea and Dubai Eye\u00a0</p><p>-Fully furnished with kitchen appliances</p><p>- Smart home system and built-in wardrobes</p><p>- Balcony for outdoor relaxation</p><p>- Rented for 350,000 AED Till March 2026</p><p><br></p><p><strong>Amenities:</strong></p><p><br></p><p>- Rooftop infinity swimming pool</p><p>- Views of the Arabian Ocean</p><p>- Unmatched 360 views of the Dubai skyline</p><p><br></p><p>Step into your dream abode at the esteemed Jumeirah Gate Tower 1, located in the dynamic neighborhood of Jumeirah Beach Residence. This exceptional 1-bedroom apartment seamlessly combines modern design, comfort, and breathtaking views of the surroundings, offering you an unparalleled living experience.</p><p><br></p><p>Contact Sabida for further details.</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+        "amenity_names": [
+          "Balcony",
+          "Barbecue Area",
+          "Built in Wardrobes",
+          "Central A/C",
+          "Children's Play Area",
+          "Children's Pool",
+          "Covered Parking",
+          "Kitchen Appliances",
+          "Lobby in Building",
+          "Security",
+          "Shared Gym",
+          "Shared Pool"
+        ],
+        "payment_method": [],
+        "lead_value": 1000,
+        "details_path": "/en/plp/buy/apartment-for-sale-dubai-jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1-15774844",
+        "rank_score": 85.53276824951172,
+        "bedrooms_value": 2,
+        "bathrooms_value": 3,
+        "is_pf_exclusive": false,
+        "listing_id": "01KBQ6SF82QKP6ZW5J464QN1VR",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 1,
+      "aggregated_position": 1
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15540180",
+        "category_id": 1,
+        "property_type": "Apartment",
+        "price": {
+          "value": 2600000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Exclusive | Vacant Now | Largest Layout | Upgraded",
+        "location": {
+          "id": "2744",
+          "full_name": "South Ridge 2, South Ridge, Downtown Dubai, Dubai",
+          "coordinates": {
+            "lat": 25.18645668029785,
+            "lon": 55.27751159667969
+          },
+          "slug": "downtown-dubai-south-ridge-south-ridge-2",
+          "path": "1.41.611.2744",
+          "type": "TOWER",
+          "name": "South Ridge 2",
+          "path_name": "Dubai, Downtown Dubai, South Ridge"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/CZQECJ2071HBTGBQSEP6CTRC4M/85b4c6b8-eae8-48ad-96bf-734df15b9c13/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/CZQECJ2071HBTGBQSEP6CTRC4M/85b4c6b8-eae8-48ad-96bf-734df15b9c13/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "1",
+        "bathrooms": "2",
+        "size": {
+          "value": 1129,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-south-ridge-south-ridge-2-15540180",
+        "reference": "HI-S-009398",
+        "listed_date": "2026-01-06T10:08:07Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009398%0AType%3A+Apartment%0APrice%3A+2%2C600%2C000+AED+%0ALocation%3A+South+Ridge+2+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15540180%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 11,
+        "amenities": [
+          "BA",
+          "BR",
+          "BW",
+          "AC",
+          "PR",
+          "CO",
+          "SE",
+          "SY",
+          "SP",
+          "BL"
+        ],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 1,
+        "has_view_360": false,
+        "rsp": 89.23228,
+        "rss": 89.23228,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "7120093800",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "41",
+            "name": "Downtown Dubai",
+            "type": "COMMUNITY",
+            "slug": "downtown-dubai",
+            "slug_en": "downtown-dubai",
+            "level": "1"
+          },
+          {
+            "id": "611",
+            "name": "South Ridge",
+            "type": "SUBCOMMUNITY",
+            "slug": "downtown-dubai-south-ridge",
+            "slug_en": "downtown-dubai-south-ridge",
+            "level": "2"
+          },
+          {
+            "id": "2744",
+            "name": "South Ridge 2",
+            "type": "TOWER",
+            "slug": "downtown-dubai-south-ridge-south-ridge-2",
+            "slug_en": "downtown-dubai-south-ridge-south-ridge-2",
+            "level": "3"
+          }
+        ],
+        "description": "Experience luxury urban living in this elegant 1-bedroom apartment located in the highly sought-after South Ridge 2, Downtown Dubai. Offering a perfect blend of space, style, and convenience, this home is ideal for both end-users and investors.The apartment features a bright living area, modern open kitchen, and two bathrooms, including an en-suite in the master bedroom. Floor-to-ceiling windows fill the space with natural light, while the private balcony offers beautiful views of the vibrant Downtown skyline.Property Details:1 Bedroom2 BathroomsLargest Layout: 1129 SQFTVacant NowBright and Spacious LayoutBuilt-in WardrobesBalconyHigh-Quality FinishesCommunity Features:Swimming Pool & Fully Equipped GymChildren\u2019s Play Area24/7 Security & ConciergeRetail Outlets and Restaurants NearbyClose to Dubai Mall and Burj KhalifaLocated in the heart of Downtown Dubai, South Ridge offers a peaceful community atmosphere with easy access to world-class shopping, dining, and entertainment.Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.",
+        "amenity_names": [
+          "Balcony",
+          "Barbecue Area",
+          "Built in Wardrobes",
+          "Central A/C",
+          "Children's Play Area",
+          "Children's Pool",
+          "Security",
+          "Shared Gym",
+          "Shared Pool",
+          "View of Landmark"
+        ],
+        "payment_method": [],
+        "lead_value": 1000,
+        "details_path": "/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-south-ridge-south-ridge-2-15540180",
+        "rank_score": 89.2322769165039,
+        "bedrooms_value": 1,
+        "bathrooms_value": 2,
+        "is_pf_exclusive": false,
+        "listing_id": "CZQECJ2071HBTGBQSEP6CTRC4M",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 2,
+      "aggregated_position": 2
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15952302",
+        "category_id": 1,
+        "property_type": "Apartment",
+        "price": {
+          "value": 3980000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Exclusive | High Floor | Great Sea View",
+        "location": {
+          "id": "12890",
+          "full_name": "Seagate Building 3, Seagate, Mina Rashid, Dubai",
+          "coordinates": {
+            "lat": 25.284297943115234,
+            "lon": 55.2755126953125
+          },
+          "slug": "mina-rashid-seagate-seagate-building-3",
+          "path": "1.10472.11825.12890",
+          "type": "TOWER",
+          "name": "Seagate Building 3",
+          "path_name": "Dubai, Mina Rashid, Seagate"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/JM9WK7N3Q2S9MMR9X8THP85JEG/3917b86c-9070-476d-8ad9-1fd6d8db27e1/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/JM9WK7N3Q2S9MMR9X8THP85JEG/3917b86c-9070-476d-8ad9-1fd6d8db27e1/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "size": {
+          "value": 1094,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-mina-rashid-seagate-seagate-building-3-15952302",
+        "reference": "HI-S-010107",
+        "listed_date": "2025-12-30T06:43:18Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-010107%0AType%3A+Apartment%0APrice%3A+3%2C980%2C000+AED+%0ALocation%3A+Seagate+Building+3+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15952302%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 30,
+        "amenities": [
+          "AC",
+          "CP",
+          "LB",
+          "SE",
+          "VW"
+        ],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 1,
+        "has_view_360": false,
+        "rsp": 87.54509,
+        "rss": 87.54509,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "71256501041",
+        "offering_type": "Residential for Sale",
+        "video_url": "https://youtu.be/D62AmYQjT6Y",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "10472",
+            "name": "Mina Rashid",
+            "type": "COMMUNITY",
+            "slug": "mina-rashid",
+            "slug_en": "mina-rashid",
+            "level": "1"
+          },
+          {
+            "id": "11825",
+            "name": "Seagate",
+            "type": "SUBCOMMUNITY",
+            "slug": "mina-rashid-seagate",
+            "slug_en": "mina-rashid-seagate",
+            "level": "2"
+          },
+          {
+            "id": "12890",
+            "name": "Seagate Building 3",
+            "type": "TOWER",
+            "slug": "mina-rashid-seagate-seagate-building-3",
+            "slug_en": "mina-rashid-seagate-seagate-building-3",
+            "level": "3"
+          }
+        ],
+        "description": "Experience elevated coastal living in this beautifully presented 2-bedroom apartment located on a high floor in Seagate Building 3. Spanning a BUA of 1,085.75 sq. ft., this residence offers a well-balanced layout designed for comfort and functionality.The apartment features a bright open-plan living and dining area, enhanced by floor-to-ceiling windows that capture breathtaking sea views and fill the home with natural light. The modern kitchen is seamlessly integrated, offering a practical yet stylish space for everyday living.Both bedrooms are generously sized, with built-in wardrobes, while the master bedroom benefits from an en-suite bathroom. High-quality finishes throughout add to the refined feel of the home.Residents of Seagate enjoy access to premium amenities and a prime waterfront location, with easy connectivity to key destinations, dining, and leisure options.An excellent opportunity for end-users and investors seeking exclusivity, views, and a prime address.Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.",
+        "amenity_names": [
+          "Central A/C",
+          "Covered Parking",
+          "Lobby in Building",
+          "Security",
+          "View of Water"
+        ],
+        "payment_method": [],
+        "lead_value": 10,
+        "details_path": "/en/plp/buy/apartment-for-sale-dubai-mina-rashid-seagate-seagate-building-3-15952302",
+        "rank_score": 87.54508972167969,
+        "bedrooms_value": 2,
+        "bathrooms_value": 2,
+        "is_pf_exclusive": false,
+        "listing_id": "JM9WK7N3Q2S9MMR9X8THP85JEG",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 3,
+      "aggregated_position": 3
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15814284",
+        "category_id": 1,
+        "property_type": "Villa",
+        "price": {
+          "value": 5360000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Premium Community Living | Plus Maids | High ROI",
+        "location": {
+          "id": "13847",
+          "full_name": "Golf Lane, EMAAR South, Dubai South (Dubai World Central), Dubai",
+          "coordinates": {
+            "lat": 24.853994369506836,
+            "lon": 55.13435363769531
+          },
+          "slug": "dubai-south-dubai-world-central-emaar-south-golf-lane",
+          "path": "1.8648.8658.13847",
+          "type": "TOWER",
+          "name": "Golf Lane",
+          "path_name": "Dubai, Dubai South (Dubai World Central), EMAAR South"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KC41SYTGJT79P8GAWMNGAVRW/b55785ce-ceb6-43f3-9839-a8e80d792732/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KC41SYTGJT79P8GAWMNGAVRW/b55785ce-ceb6-43f3-9839-a8e80d792732/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "size": {
+          "value": 5604,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/villa-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-lane-15814284",
+        "reference": "HI-S-009888",
+        "listed_date": "2025-12-10T11:55:16Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009888%0AType%3A+Villa%0APrice%3A+5%2C360%2C000+AED+%0ALocation%3A+Golf+Lane+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15814284%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 13,
+        "amenities": [
+          "BW",
+          "AC",
+          "CP",
+          "MR",
+          "SP",
+          "WC"
+        ],
+        "completion_status": "off_plan",
+        "furnished": "YES",
+        "property_type_id": 35,
+        "has_view_360": false,
+        "rsp": 85.701775,
+        "rss": 85.701775,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "69618628847",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "8648",
+            "name": "Dubai South (Dubai World Central)",
+            "type": "COMMUNITY",
+            "slug": "dubai-south-dubai-world-central",
+            "slug_en": "dubai-south-dubai-world-central",
+            "level": "1"
+          },
+          {
+            "id": "8658",
+            "name": "EMAAR South",
+            "type": "SUBCOMMUNITY",
+            "slug": "dubai-south-dubai-world-central-emaar-south",
+            "slug_en": "dubai-south-dubai-world-central-emaar-south",
+            "level": "2"
+          },
+          {
+            "id": "13847",
+            "name": "Golf Lane",
+            "type": "TOWER",
+            "slug": "dubai-south-dubai-world-central-emaar-south-golf-lane",
+            "slug_en": "dubai-south-dubai-world-central-emaar-south-golf-lane",
+            "level": "3"
+          }
+        ],
+        "description": "<p>This modern 4-bedroom villa with a maid\u2019s room offers a practical and spacious layout designed for family living. Located in the sought-after Golf Lane community within EMAAR South, the home provides bright interiors, well-planned living spaces, and a comfortable flow throughout.</p><p><br></p><p>Set on a generous plot within a high-quality master community, residents enjoy a peaceful environment surrounded by landscaped areas, parks, and convenient access to community facilities and retail options. This villa is ideal for buyers seeking long-term value in a well-connected and fast-growing location.</p><p><br></p><p><strong>Property Details</strong></p><p>4 Bedrooms</p><p>Maid\u2019s Room</p><p>Built-Up Area: 4,043 sq.ft</p><p>Plot Size: 5,605 sq.ft</p><p>Modern layout with spacious interiors</p><p>High-end community facilities</p><p>Attractive payment position (50% paid)</p><p><br></p><p><strong>Community Highlights</strong></p><p>Family-friendly master development</p><p>Parks, walkways &amp; landscaped green areas</p><p>Retail, dining &amp; community facilities</p><p>Easy access to major roads and Dubai\u2019s key destinations</p><p>Peaceful, well-planned neighborhood</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+        "amenity_names": [
+          "Built in Wardrobes",
+          "Central A/C",
+          "Covered Parking",
+          "Maids Room",
+          "Shared Pool",
+          "Walk-in Closet"
+        ],
+        "payment_method": [],
+        "lead_value": 1000,
+        "details_path": "/en/plp/buy/villa-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-lane-15814284",
+        "rank_score": 85.70177459716797,
+        "bedrooms_value": 4,
+        "bathrooms_value": 5,
+        "is_pf_exclusive": false,
+        "listing_id": "01KC41SYTGJT79P8GAWMNGAVRW",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 4,
+      "aggregated_position": 4
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15813582",
+        "category_id": 1,
+        "property_type": "Apartment",
+        "price": {
+          "value": 2800000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Fully Furnished | Vida Branded | Emaar",
+        "location": {
+          "id": "14597",
+          "full_name": "Vida Dubai Mall Tower 1, Vida Residences Dubai Mall, Downtown Dubai, Dubai",
+          "coordinates": {
+            "lat": 25.196271896362305,
+            "lon": 55.28352355957031
+          },
+          "slug": "downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1",
+          "path": "1.41.9145.14597",
+          "type": "TOWER",
+          "name": "Vida Dubai Mall Tower 1",
+          "path_name": "Dubai, Downtown Dubai, Vida Residences Dubai Mall"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KC3ZENG94J94C452NTA09MJX/043602e5-817f-4bce-96e3-1a7956727316/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KC3ZENG94J94C452NTA09MJX/043602e5-817f-4bce-96e3-1a7956727316/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "1",
+        "bathrooms": "2",
+        "size": {
+          "value": 860,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1-15813582",
+        "reference": "HI-S-009517",
+        "listed_date": "2025-12-10T11:13:44Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009517%0AType%3A+Apartment%0APrice%3A+2%2C800%2C000+AED+%0ALocation%3A+Vida+Dubai+Mall+Tower+1+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15813582%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 19,
+        "amenities": [
+          "BA",
+          "BR",
+          "BW",
+          "AC",
+          "PR",
+          "CO",
+          "CS",
+          "CP",
+          "BK",
+          "LB",
+          "SE",
+          "SY",
+          "SP",
+          "VC",
+          "BL"
+        ],
+        "completion_status": "completed",
+        "furnished": "YES",
+        "property_type_id": 1,
+        "has_view_360": false,
+        "rsp": 85.70061,
+        "rss": 85.70061,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "7192088509",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "41",
+            "name": "Downtown Dubai",
+            "type": "COMMUNITY",
+            "slug": "downtown-dubai",
+            "slug_en": "downtown-dubai",
+            "level": "1"
+          },
+          {
+            "id": "9145",
+            "name": "Vida Residences Dubai Mall",
+            "type": "SUBCOMMUNITY",
+            "slug": "downtown-dubai-vida-residences-dubai-mall",
+            "slug_en": "downtown-dubai-vida-residences-dubai-mall",
+            "level": "2"
+          },
+          {
+            "id": "14597",
+            "name": "Vida Dubai Mall Tower 1",
+            "type": "TOWER",
+            "slug": "downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1",
+            "slug_en": "downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1",
+            "level": "3"
+          }
+        ],
+        "description": "<p>Hamptons International by Emaar proudly presents this luxurious 1-bedroom apartment in Vida Residences Dubai Mall Tower 1. Located in the heart of Downtown Dubai, this mid-floor unit combines modern elegance with breathtaking Burj Khalifa , offering the perfect balance of lifestyle and investment.</p><p><br></p><p><strong>Unit Details:</strong></p><p><br></p><p>-Bedrooms: 1</p><p>-Direct access to Dubai Mall</p><p>-Size:860 SQFT</p><p>-Kitchen: Open &amp; Fully Fitted</p><p>-Furnishing: Fully Furnished</p><p><br></p><p><strong>Lifestyle &amp; Location:</strong></p><p><br></p><p>Downtown Dubai is a world-class lifestyle hub, home to Burj Khalifa, Dubai Mall, and the Dubai Fountain. Residents enjoy unrivaled shopping, dining, and entertainment\u2014all within walking distance.</p><p><br></p><p>Contact us today for more details and personalized opinion on your investments!</p><p><br></p><p>Why Choose Hamptons International?</p><p><br></p><p>With over 150 years of real estate excellence, Hamptons International by Emaar is your trusted advisor for premium Dubai properties. We deliver exclusive opportunities, expert guidance, and seamless transactions\u2014helping you achieve maximum value, whether you are buying, selling, or investing.</p>",
+        "amenity_names": [
+          "Balcony",
+          "Barbecue Area",
+          "Built in Wardrobes",
+          "Central A/C",
+          "Children's Play Area",
+          "Children's Pool",
+          "Concierge",
+          "Covered Parking",
+          "Kitchen Appliances",
+          "Lobby in Building",
+          "Security",
+          "Shared Gym",
+          "Shared Pool",
+          "Vastu-compliant",
+          "View of Landmark"
+        ],
+        "payment_method": [],
+        "lead_value": 1000,
+        "details_path": "/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1-15813582",
+        "rank_score": 85.70060729980469,
+        "bedrooms_value": 1,
+        "bathrooms_value": 2,
+        "is_pf_exclusive": false,
+        "listing_id": "01KC3ZENG94J94C452NTA09MJX",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 5,
+      "aggregated_position": 5
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15774670",
+        "category_id": 1,
+        "property_type": "Apartment",
+        "price": {
+          "value": 6950000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Full Marina View | High Floor | Large Layout",
+        "location": {
+          "id": "8995",
+          "full_name": "Vida Residences Dubai Marina, Dubai Marina, Dubai",
+          "coordinates": {
+            "lat": 25.07237434387207,
+            "lon": 55.136287689208984
+          },
+          "slug": "dubai-marina-vida-residences-dubai-marina",
+          "path": "1.50.8995",
+          "type": "TOWER",
+          "name": "Vida Residences Dubai Marina",
+          "path_name": "Dubai, Dubai Marina"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6C1WM6YVMWHDRW7G1J0Z4/1d17c2e3-9e8f-4ceb-b3ed-d9ec2c72073b/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6C1WM6YVMWHDRW7G1J0Z4/1d17c2e3-9e8f-4ceb-b3ed-d9ec2c72073b/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "3",
+        "bathrooms": "4",
+        "size": {
+          "value": 1657,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-marina-vida-residences-dubai-marina-15774670",
+        "reference": "HI-S-009680",
+        "listed_date": "2025-12-05T12:04:41Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009680%0AType%3A+Apartment%0APrice%3A+6%2C950%2C000+AED+%0ALocation%3A+Vida+Residences+Dubai+Marina+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774670%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 23,
+        "amenities": [
+          "BA",
+          "BW",
+          "AC",
+          "CS"
+        ],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 1,
+        "has_view_360": false,
+        "rsp": 85.53262,
+        "rss": 85.53262,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "7143170153",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "50",
+            "name": "Dubai Marina",
+            "type": "COMMUNITY",
+            "slug": "dubai-marina",
+            "slug_en": "dubai-marina",
+            "level": "1"
+          },
+          {
+            "id": "8995",
+            "name": "Vida Residences Dubai Marina",
+            "type": "TOWER",
+            "slug": "dubai-marina-vida-residences-dubai-marina",
+            "slug_en": "dubai-marina-vida-residences-dubai-marina",
+            "level": "2"
+          }
+        ],
+        "description": "<p>Hamptons International is proud to present this spacious three-bedroom apartment located in the prestigious Vida Residences, Dubai Marina. This modern and bright property offers a perfect blend of luxury and comfort, featuring elegant finishes, generous living spaces, and breathtaking Marina views. Situated in one of Dubai\u2019s most sought-after waterfront communities, it provides an exceptional lifestyle with world-class amenities right at your doorstep.</p><p><br></p><p>- 3 Bedrooms</p><p>- 4 Bathrooms</p><p>- Fully Equipped Kitchen</p><p>-Rented Till 9th May 2026</p><p>-Above 40th Floor</p><p>- 2 Parking Spaces</p><p>- Full Marina View</p><p>- Full access to the hotel facilities (Infinity Pool, Gym)</p><p><br></p><p>AMENITIES AND FACILITIES:</p><p><br></p><p>- Reception &amp; Concierge service</p><p>- Common courtyard</p><p>- Cleaning service</p><p>- BBQ Area</p><p>- Jacuzzi</p><p>- Retail area</p><p>- Restaurants and Cafes</p><p>- Infinity Pool</p><p>- Steam room Sauna</p><p><br></p><p>Situated at the heart of Dubai Marina , along the idyllic waterfront promenade, Vida Dubai Marina &amp; Yacht Club is at the centre of the city\u2019s very best experiences, from yacht-filled views, to culinary experiences and amazing nightlife.</p><p><br></p><p>From Vida Dubai Marina &amp; Yacht Club it takes roughly 19 minutes to drive to Dubai Mall, 11 minutes to Palm Jumeirah, 16 minutes to Burj Al Arab and 8 minutes to The Walk JBR.</p><p><br></p><p>Dubai International Airport (DXB) is roughly 27 minutes&#39; drive and the new Al Maktoum International Airport is roughly 30 minutes&#39; drive.*</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+        "amenity_names": [
+          "Balcony",
+          "Built in Wardrobes",
+          "Central A/C",
+          "Concierge"
+        ],
+        "payment_method": [],
+        "lead_value": 1000,
+        "details_path": "/en/plp/buy/apartment-for-sale-dubai-dubai-marina-vida-residences-dubai-marina-15774670",
+        "rank_score": 85.53262329101562,
+        "bedrooms_value": 3,
+        "bathrooms_value": 4,
+        "is_pf_exclusive": false,
+        "listing_id": "01KBQ6C1WM6YVMWHDRW7G1J0Z4",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 6,
+      "aggregated_position": 6
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15774602",
+        "category_id": 1,
+        "property_type": "Townhouse",
+        "price": {
+          "value": 3250000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Exclusive | Facing Water Canal | Single Row",
+        "location": {
+          "id": "13153",
+          "full_name": "Nima, The Valley, Dubai",
+          "coordinates": {
+            "lat": 25.002626419067383,
+            "lon": 55.452701568603516
+          },
+          "slug": "the-valley-nima",
+          "path": "1.10757.13153",
+          "type": "SUBCOMMUNITY",
+          "name": "Nima",
+          "path_name": "Dubai, The Valley"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ673P9K8K9GRBYP0S2CGJH/8d8b0a6f-23db-48ef-9fb4-0150e472ed69/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ673P9K8K9GRBYP0S2CGJH/8d8b0a6f-23db-48ef-9fb4-0150e472ed69/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": true,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": "3",
+        "bathrooms": "4",
+        "size": {
+          "value": 1971,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/townhouse-for-sale-dubai-the-valley-nima-15774602",
+        "reference": "HI-S-007926",
+        "listed_date": "2025-12-05T12:02:02Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-007926%0AType%3A+Townhouse%0APrice%3A+3%2C250%2C000+AED+%0ALocation%3A+Nima+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774602%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 13,
+        "amenities": [
+          "BA",
+          "BR",
+          "BW",
+          "AC",
+          "PR",
+          "CO",
+          "CS",
+          "CP",
+          "BK",
+          "LB",
+          "MR",
+          "SE",
+          "SY",
+          "SP",
+          "ST",
+          "VC",
+          "BL",
+          "VW"
+        ],
+        "completion_status": "off_plan",
+        "furnished": "NO",
+        "property_type_id": 22,
+        "has_view_360": false,
+        "rsp": 85.53258,
+        "rss": 85.53258,
+        "qs": 100,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "69538455299",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "10757",
+            "name": "The Valley",
+            "type": "COMMUNITY",
+            "slug": "the-valley",
+            "slug_en": "the-valley",
+            "level": "1"
+          },
+          {
+            "id": "13153",
+            "name": "Nima",
+            "type": "SUBCOMMUNITY",
+            "slug": "the-valley-nima",
+            "slug_en": "the-valley-nima",
+            "level": "2"
+          }
+        ],
+        "description": "<p>This spacious 3-bedroom townhouse with a maids room is ideally located in Nima, The Valley. Offering modern living in a vibrant community, this home provides ample space and comfort, making it perfect for families. Enjoy easy access to top amenities and serene surroundings.</p><p><br></p><p><strong>Property Details:\u00a0</strong></p><p><br></p><p>3 bedrooms</p><p>Maids Room</p><p>On the water and Lagoons</p><p>Plot Size: 1971 sqft\u00a0</p><p>build up Size : 2348 sqft\u00a0</p><p>Handover Q3 2027\u00a0</p><p><br></p><p><strong>With Payment plan as below:\u00a0</strong></p><p><br></p><p>60% Paid by the Seller</p><p>Remaining to be paid in instalments until Handover in May 2027</p><p>completion Date: May 2027</p><p><br></p><p>Your dream home in Nima is perfectly positioned in a peaceful family sanctuary that is away from the hustle and bustle of the city, while still being well-connected to everything Dubai has to offer.</p><p><br></p><p>Live life to the full, with exceptional amenities, complemented by verdant open spaces and beautiful greenery, right on your doorstep. From relaxing evening strolls and fun-filled time with the kids, to family beach days and barbecues with friends, Nima is the ideal setting for an elevated lifestyle</p><p><br></p><p>Call Sabida now for further details.\u00a0</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.4</p>",
+        "amenity_names": [
+          "Balcony",
+          "Barbecue Area",
+          "Built in Wardrobes",
+          "Central A/C",
+          "Children's Play Area",
+          "Children's Pool",
+          "Concierge",
+          "Covered Parking",
+          "Kitchen Appliances",
+          "Lobby in Building",
+          "Maids Room",
+          "Security",
+          "Shared Gym",
+          "Shared Pool",
+          "Study",
+          "Vastu-compliant",
+          "View of Landmark",
+          "View of Water"
+        ],
+        "payment_method": [],
+        "lead_value": 10,
+        "details_path": "/en/plp/buy/townhouse-for-sale-dubai-the-valley-nima-15774602",
+        "rank_score": 85.53257751464844,
+        "bedrooms_value": 3,
+        "bathrooms_value": 4,
+        "is_pf_exclusive": false,
+        "listing_id": "01KBQ673P9K8K9GRBYP0S2CGJH",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 7,
+      "aggregated_position": 7
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15774825",
+        "category_id": 1,
+        "property_type": "Land",
+        "price": {
+          "value": 4020000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Motivated Seller | Multiple Plots | Near Park",
+        "location": {
+          "id": "15808",
+          "full_name": "Saih Shuiab House, Jebel Ali Hills, Jebel Ali, Dubai",
+          "coordinates": {
+            "lat": 24.89752197265625,
+            "lon": 54.98973083496094
+          },
+          "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "path": "1.65.914.15808",
+          "type": "TOWER",
+          "name": "Saih Shuiab House",
+          "path_name": "Dubai, Jebel Ali, Jebel Ali Hills"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6QSCNW7MR2C29J7XCNA6E/9056df95-ed07-4b39-95a1-01db529330d0/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6QSCNW7MR2C29J7XCNA6E/9056df95-ed07-4b39-95a1-01db529330d0/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": false,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": null,
+        "bathrooms": null,
+        "size": {
+          "value": 9569,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774825",
+        "reference": "HI-S-009711",
+        "listed_date": "2025-12-05T12:11:03Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009711%0AType%3A+Land%0APrice%3A+4%2C020%2C000+AED+%0ALocation%3A+Saih+Shuiab+House+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774825%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 23,
+        "amenities": [],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 5,
+        "has_view_360": false,
+        "rsp": 81.524765,
+        "rss": 81.524765,
+        "qs": 95,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "6524541334",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "65",
+            "name": "Jebel Ali",
+            "type": "COMMUNITY",
+            "slug": "jebel-ali",
+            "slug_en": "jebel-ali",
+            "level": "1"
+          },
+          {
+            "id": "914",
+            "name": "Jebel Ali Hills",
+            "type": "SUBCOMMUNITY",
+            "slug": "jebel-ali-jebel-ali-hills",
+            "slug_en": "jebel-ali-jebel-ali-hills",
+            "level": "2"
+          },
+          {
+            "id": "15808",
+            "name": "Saih Shuiab House",
+            "type": "TOWER",
+            "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+            "slug_en": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+            "level": "3"
+          }
+        ],
+        "description": "<p>Hamptons International is thrilled to present this exciting opportunity in Jebel Ali Hills, one of the most sought-after and highly appreciating communities. Jebel Ali Hills is a residential off-plan land development project by Meraas, offering among the most affordable freehold plots in the market today. Plot can be fully customized to suit investor requirements.</p><p><br></p><p><strong>NOTE: RARE AVAILABILITY OF 7 PLOTS ALTOGETHER IN THE SAME ROW AVAILABLE FOR SALE.</strong></p><p><br></p><p><strong>Property Features:</strong></p><p><br></p><ul><li>Plot Size: 9,569 sq. ft.</li><li>Villa Type: G+1 Independent</li><li>Service Charges: AED 0.27 per sq. ft. of GFA</li><li>Location Benefits: Backing the Park</li></ul><p><strong>Amenities:</strong></p><p><br></p><ul><li>Freehold Ownership</li><li>Full Architectural Freedom \u2013 No design restrictions</li><li>Mortgage Available</li><li>Handover: Ready for Immediate Construction</li><li>Landscaped Parks</li><li>Schools</li><li>Mosques</li><li>Shopping Mall</li><li>Children\u2019s Play Areas</li><li>Retail and Dining Options</li></ul><p><strong>CONNECT WITH SABIDA NOW TOO KNOW MORE DETAILS!</strong></p><p><br></p><p>Hamptons International is part of the Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+        "amenity_names": [],
+        "payment_method": [],
+        "lead_value": 225.53,
+        "details_path": "/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774825",
+        "rank_score": 81.52476501464844,
+        "bedrooms_value": null,
+        "bathrooms_value": null,
+        "is_pf_exclusive": false,
+        "listing_id": "01KBQ6QSCNW7MR2C29J7XCNA6E",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 8,
+      "aggregated_position": 8
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15774804",
+        "category_id": 1,
+        "property_type": "Land",
+        "price": {
+          "value": 4020000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Motivated Seller | Multiple Plots | Near Park",
+        "location": {
+          "id": "15808",
+          "full_name": "Saih Shuiab House, Jebel Ali Hills, Jebel Ali, Dubai",
+          "coordinates": {
+            "lat": 24.89752197265625,
+            "lon": 54.98973083496094
+          },
+          "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "path": "1.65.914.15808",
+          "type": "TOWER",
+          "name": "Saih Shuiab House",
+          "path_name": "Dubai, Jebel Ali, Jebel Ali Hills"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6P0085SZ733W1Z9C1GQ0Y/a70233a6-ad2d-42bf-9b93-583dbbd3a0a2/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6P0085SZ733W1Z9C1GQ0Y/a70233a6-ad2d-42bf-9b93-583dbbd3a0a2/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": false,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": null,
+        "bathrooms": null,
+        "size": {
+          "value": 9569,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774804",
+        "reference": "HI-S-009710",
+        "listed_date": "2025-12-05T12:10:07Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009710%0AType%3A+Land%0APrice%3A+4%2C020%2C000+AED+%0ALocation%3A+Saih+Shuiab+House+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774804%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 10,
+        "amenities": [],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 5,
+        "has_view_360": false,
+        "rsp": 81.52475,
+        "rss": 81.52475,
+        "qs": 95,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "6524541339",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "65",
+            "name": "Jebel Ali",
+            "type": "COMMUNITY",
+            "slug": "jebel-ali",
+            "slug_en": "jebel-ali",
+            "level": "1"
+          },
+          {
+            "id": "914",
+            "name": "Jebel Ali Hills",
+            "type": "SUBCOMMUNITY",
+            "slug": "jebel-ali-jebel-ali-hills",
+            "slug_en": "jebel-ali-jebel-ali-hills",
+            "level": "2"
+          },
+          {
+            "id": "15808",
+            "name": "Saih Shuiab House",
+            "type": "TOWER",
+            "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+            "slug_en": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+            "level": "3"
+          }
+        ],
+        "description": "<p>Hamptons International is thrilled to present this exciting opportunity in Jebel Ali Hills, one of the most sought-after and highly appreciating communities. Jebel Ali Hills is a residential off-plan land development project by Meraas, offering among the most affordable freehold plots in the market today. Plot can be fully customized to suit investor requirements.</p><p><br></p><p><strong>NOTE: RARE AVAILABILITY OF 7 PLOTS ALTOGETHER IN THE SAME ROW AVAILABLE FOR SALE.</strong></p><p><br></p><p><strong>Property Features:</strong></p><p><br></p><ul><li>Plot Size: 9,569 sq. ft.</li><li>Villa Type: G+1 Independent</li><li>Service Charges: AED 0.27 per sq. ft. of GFA</li><li>Location Benefits: Backing the Park</li></ul><p><strong>Amenities:</strong></p><p><br></p><ul><li>Freehold Ownership</li><li>Full Architectural Freedom \u2013 No design restrictions</li><li>Mortgage Available</li><li>Handover: Ready for Immediate Construction</li><li>Landscaped Parks</li><li>Schools</li><li>Mosques</li><li>Shopping Mall</li><li>Children\u2019s Play Areas</li><li>Retail and Dining Options</li></ul><p><strong>CONNECT WITH SABIDA NOW TOO KNOW MORE DETAILS!</strong></p><p><br></p><p>Hamptons International is part of the Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+        "amenity_names": [],
+        "payment_method": [],
+        "lead_value": 225.53,
+        "details_path": "/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774804",
+        "rank_score": 81.52474975585938,
+        "bedrooms_value": null,
+        "bathrooms_value": null,
+        "is_pf_exclusive": false,
+        "listing_id": "01KBQ6P0085SZ733W1Z9C1GQ0Y",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 9,
+      "aggregated_position": 9
+    },
+    {
+      "listing_type": "property",
+      "property": {
+        "id": "15774766",
+        "category_id": 1,
+        "property_type": "Land",
+        "price": {
+          "value": 4210000,
+          "currency": "AED",
+          "period": "sell",
+          "is_hidden": false
+        },
+        "title": "Motivated Seller | Multiple Plots | Near Park",
+        "location": {
+          "id": "15808",
+          "full_name": "Saih Shuiab House, Jebel Ali Hills, Jebel Ali, Dubai",
+          "coordinates": {
+            "lat": 24.89752197265625,
+            "lon": 54.98973083496094
+          },
+          "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "path": "1.65.914.15808",
+          "type": "TOWER",
+          "name": "Saih Shuiab House",
+          "path_name": "Dubai, Jebel Ali, Jebel Ali Hills"
+        },
+        "images": [
+          {
+            "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6M65WNRPHBGB0337YV6Q1/d83e8e0a-ea74-46c1-bf3f-f0bc9bf849e9/416x272.jpg",
+            "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6M65WNRPHBGB0337YV6Q1/d83e8e0a-ea74-46c1-bf3f-f0bc9bf849e9/668x452.jpg",
+            "classification_label": ""
+          }
+        ],
+        "agent": {
+          "id": "47521",
+          "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+          "is_super_agent": true,
+          "name": "Sabida Eraj Ali Azharian",
+          "user_id": 11994,
+          "email": "sabidaa@hamptonsuae.com",
+          "languages": [
+            "English",
+            "Arabic",
+            "Persian/Farsi"
+          ],
+          "slug": "sabida-eraj-ali-azharian"
+        },
+        "broker": {
+          "id": "8011",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_verified": false,
+        "is_direct_from_developer": false,
+        "is_new_construction": false,
+        "is_available": true,
+        "is_featured": false,
+        "is_premium": false,
+        "is_new_insert": false,
+        "utilities_price_type": "exclusive",
+        "live_viewing": null,
+        "is_community_expert": false,
+        "is_cts": false,
+        "bedrooms": null,
+        "bathrooms": null,
+        "size": {
+          "value": 10017,
+          "unit": "sqft"
+        },
+        "share_url": "https://www.propertyfinder.ae/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774766",
+        "reference": "HI-S-009709",
+        "listed_date": "2025-12-05T12:08:57Z",
+        "contact_options": [
+          {
+            "type": "email",
+            "value": "sabidaa@hamptonsuae.com",
+            "link": "mailto:sabidaa@hamptonsuae.com",
+            "is_did": false
+          },
+          {
+            "type": "phone",
+            "value": "+971503867790",
+            "link": "tel:+971503867790",
+            "is_did": false
+          },
+          {
+            "type": "whatsapp",
+            "value": "+97145560345",
+            "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009709%0AType%3A+Land%0APrice%3A+4%2C210%2C000+AED+%0ALocation%3A+Saih+Shuiab+House+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774766%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+            "is_did": false
+          }
+        ],
+        "images_count": 30,
+        "amenities": [],
+        "completion_status": "completed",
+        "furnished": "NO",
+        "property_type_id": 5,
+        "has_view_360": false,
+        "rsp": 81.52473,
+        "rss": 81.52473,
+        "qs": 95,
+        "is_exclusive": false,
+        "is_broker_project_property": false,
+        "rera": "6524541349",
+        "offering_type": "Residential for Sale",
+        "video_url": "",
+        "is_smart_ad": false,
+        "is_spotlight_listing": false,
+        "is_claimed_by_agent": false,
+        "is_under_offer_by_competitor": false,
+        "listing_level": "standard",
+        "listing_level_label": "standard",
+        "location_tree": [
+          {
+            "id": "1",
+            "name": "Dubai",
+            "type": "CITY",
+            "slug": "dubai",
+            "slug_en": "dubai",
+            "level": "0"
+          },
+          {
+            "id": "65",
+            "name": "Jebel Ali",
+            "type": "COMMUNITY",
+            "slug": "jebel-ali",
+            "slug_en": "jebel-ali",
+            "level": "1"
+          },
+          {
+            "id": "914",
+            "name": "Jebel Ali Hills",
+            "type": "SUBCOMMUNITY",
+            "slug": "jebel-ali-jebel-ali-hills",
+            "slug_en": "jebel-ali-jebel-ali-hills",
+            "level": "2"
+          },
+          {
+            "id": "15808",
+            "name": "Saih Shuiab House",
+            "type": "TOWER",
+            "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+            "slug_en": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+            "level": "3"
+          }
+        ],
+        "description": "<p>Hamptons International is thrilled to present this exciting opportunity in Jebel Ali Hills, one of the most sought-after and highly appreciating communities. Jebel Ali Hills is a residential off-plan land development project by Meraas, offering among the most affordable freehold plots in the market today. Plot can be fully customized to suit investor requirements.</p><p><br></p><p><strong>NOTE: RARE AVAILABILITY OF 7 PLOTS ALTOGETHER IN THE SAME ROW AVAILABLE FOR SALE.</strong></p><p><br></p><p><strong>Property Features:</strong></p><p><br></p><ul><li>Plot Size: 10,017 sq. ft.</li><li>Villa Type: G+1 Independent</li><li>Service Charges: AED 0.27 per sq. ft. of GFA</li><li>Location Benefits: Backing the Park</li></ul><p><strong>Amenities:</strong></p><p><br></p><ul><li>Freehold Ownership</li><li>Full Architectural Freedom \u2013 No design restrictions</li><li>Mortgage Available</li><li>Handover: Ready for Immediate Construction</li><li>Landscaped Parks</li><li>Schools</li><li>Mosques</li><li>Shopping Mall</li><li>Children\u2019s Play Areas</li><li>Retail and Dining Options</li></ul><p><strong>CONNECT WITH SABIDA NOW TOO KNOW MORE DETAILS!</strong></p><p><br></p><p>Hamptons International is part of the Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+        "amenity_names": [],
+        "payment_method": [],
+        "lead_value": 225.53,
+        "details_path": "/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774766",
+        "rank_score": 81.52472686767578,
+        "bedrooms_value": null,
+        "bathrooms_value": null,
+        "is_pf_exclusive": false,
+        "listing_id": "01KBQ6M65WNRPHBGB0337YV6Q1",
+        "client": {
+          "id": "7885",
+          "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+          "name": "Hamptons International - T2",
+          "address": "",
+          "email": "",
+          "phone": "",
+          "slug": "hamptons-international-t2-8011"
+        },
+        "is_fhm": false,
+        "travel_time_tags": []
+      },
+      "project": null,
+      "project_carousel": [],
+      "project_unit": null,
+      "top_super_agents": [],
+      "project_recommendation": null,
+      "position": 10,
+      "aggregated_position": 10
+    }
+  ],
+  "similar_listings": [],
+  "meta": {
+    "page": 1,
+    "total_count": 14,
+    "new_properties_count": 0,
+    "per_page": 10,
+    "page_count": 2,
+    "location_tree": []
+  },
+  "filter_errors": [],
+  "properties": [
+    {
+      "id": "15774844",
+      "category_id": 1,
+      "property_type": "Apartment",
+      "price": {
+        "value": 7800000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Exclusive | Largest Layout | Sea - Dubai Eye View",
+      "location": {
+        "id": "11540",
+        "full_name": "Jumeirah Gate Tower 1, The Address Jumeirah Resort and Spa, Jumeirah Beach Residence, Dubai",
+        "coordinates": {
+          "lat": 25.072513580322266,
+          "lon": 55.12628936767578
+        },
+        "slug": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1",
+        "path": "1.67.8795.11540",
+        "type": "TOWER",
+        "name": "Jumeirah Gate Tower 1",
+        "path_name": "Dubai, Jumeirah Beach Residence, The Address Jumeirah Resort and Spa"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6SF82QKP6ZW5J464QN1VR/7ed3ad1f-6533-49ee-82ff-913e6c8a695e/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6SF82QKP6ZW5J464QN1VR/7ed3ad1f-6533-49ee-82ff-913e6c8a695e/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": true,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "notSelected",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "2",
+      "bathrooms": "3",
+      "size": {
+        "value": 1474,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1-15774844",
+      "reference": "HI-S-009741",
+      "listed_date": "2025-12-05T12:12:00Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009741%0AType%3A+Apartment%0APrice%3A+7%2C800%2C000+AED+%0ALocation%3A+Jumeirah+Gate+Tower+1+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774844%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 24,
+      "amenities": [
+        "BA",
+        "BR",
+        "BW",
+        "AC",
+        "PR",
+        "CO",
+        "CP",
+        "BK",
+        "LB",
+        "SE",
+        "SY",
+        "SP"
+      ],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 1,
+      "has_view_360": false,
+      "rsp": 85.53277,
+      "rss": 85.53277,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "7135261170",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "featured",
+      "listing_level_label": "featured",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "67",
+          "name": "Jumeirah Beach Residence",
+          "type": "COMMUNITY",
+          "slug": "jumeirah-beach-residence",
+          "slug_en": "jumeirah-beach-residence",
+          "level": "1"
+        },
+        {
+          "id": "8795",
+          "name": "The Address Jumeirah Resort and Spa",
+          "type": "SUBCOMMUNITY",
+          "slug": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa",
+          "slug_en": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa",
+          "level": "2"
+        },
+        {
+          "id": "11540",
+          "name": "Jumeirah Gate Tower 1",
+          "type": "TOWER",
+          "slug": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1",
+          "slug_en": "jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1",
+          "level": "3"
+        }
+      ],
+      "description": "<p>Hamptons International is pleased to present this elegant 2-bedroom apartment for sale in The Address Beach Resort, Jumeirah Gate Tower 1, JBR, offering luxury living with contemporary interiors, stunning sea views, premium amenities, private beach access and an unbeatable waterfront lifestyle.</p><p><br></p><p><strong>Property Features: </strong></p><p><br></p><p>- Luxurious 2-bedroom apartment</p><p>- Size: 1,474.98 sqft</p><p>- Above 20<sup>th</sup> floor</p><p>- Full view of sea and Dubai Eye\u00a0</p><p>-Fully furnished with kitchen appliances</p><p>- Smart home system and built-in wardrobes</p><p>- Balcony for outdoor relaxation</p><p>- Rented for 350,000 AED Till March 2026</p><p><br></p><p><strong>Amenities:</strong></p><p><br></p><p>- Rooftop infinity swimming pool</p><p>- Views of the Arabian Ocean</p><p>- Unmatched 360 views of the Dubai skyline</p><p><br></p><p>Step into your dream abode at the esteemed Jumeirah Gate Tower 1, located in the dynamic neighborhood of Jumeirah Beach Residence. This exceptional 1-bedroom apartment seamlessly combines modern design, comfort, and breathtaking views of the surroundings, offering you an unparalleled living experience.</p><p><br></p><p>Contact Sabida for further details.</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+      "amenity_names": [
+        "Balcony",
+        "Barbecue Area",
+        "Built in Wardrobes",
+        "Central A/C",
+        "Children's Play Area",
+        "Children's Pool",
+        "Covered Parking",
+        "Kitchen Appliances",
+        "Lobby in Building",
+        "Security",
+        "Shared Gym",
+        "Shared Pool"
+      ],
+      "payment_method": [],
+      "lead_value": 1000,
+      "details_path": "/en/plp/buy/apartment-for-sale-dubai-jumeirah-beach-residence-the-address-jumeirah-resort-and-spa-jumeirah-gate-tower-1-15774844",
+      "rank_score": 85.53276824951172,
+      "bedrooms_value": 2,
+      "bathrooms_value": 3,
+      "is_pf_exclusive": false,
+      "listing_id": "01KBQ6SF82QKP6ZW5J464QN1VR",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15540180",
+      "category_id": 1,
+      "property_type": "Apartment",
+      "price": {
+        "value": 2600000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Exclusive | Vacant Now | Largest Layout | Upgraded",
+      "location": {
+        "id": "2744",
+        "full_name": "South Ridge 2, South Ridge, Downtown Dubai, Dubai",
+        "coordinates": {
+          "lat": 25.18645668029785,
+          "lon": 55.27751159667969
+        },
+        "slug": "downtown-dubai-south-ridge-south-ridge-2",
+        "path": "1.41.611.2744",
+        "type": "TOWER",
+        "name": "South Ridge 2",
+        "path_name": "Dubai, Downtown Dubai, South Ridge"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/CZQECJ2071HBTGBQSEP6CTRC4M/85b4c6b8-eae8-48ad-96bf-734df15b9c13/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/CZQECJ2071HBTGBQSEP6CTRC4M/85b4c6b8-eae8-48ad-96bf-734df15b9c13/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "1",
+      "bathrooms": "2",
+      "size": {
+        "value": 1129,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-south-ridge-south-ridge-2-15540180",
+      "reference": "HI-S-009398",
+      "listed_date": "2026-01-06T10:08:07Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009398%0AType%3A+Apartment%0APrice%3A+2%2C600%2C000+AED+%0ALocation%3A+South+Ridge+2+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15540180%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 11,
+      "amenities": [
+        "BA",
+        "BR",
+        "BW",
+        "AC",
+        "PR",
+        "CO",
+        "SE",
+        "SY",
+        "SP",
+        "BL"
+      ],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 1,
+      "has_view_360": false,
+      "rsp": 89.23228,
+      "rss": 89.23228,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "7120093800",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "41",
+          "name": "Downtown Dubai",
+          "type": "COMMUNITY",
+          "slug": "downtown-dubai",
+          "slug_en": "downtown-dubai",
+          "level": "1"
+        },
+        {
+          "id": "611",
+          "name": "South Ridge",
+          "type": "SUBCOMMUNITY",
+          "slug": "downtown-dubai-south-ridge",
+          "slug_en": "downtown-dubai-south-ridge",
+          "level": "2"
+        },
+        {
+          "id": "2744",
+          "name": "South Ridge 2",
+          "type": "TOWER",
+          "slug": "downtown-dubai-south-ridge-south-ridge-2",
+          "slug_en": "downtown-dubai-south-ridge-south-ridge-2",
+          "level": "3"
+        }
+      ],
+      "description": "Experience luxury urban living in this elegant 1-bedroom apartment located in the highly sought-after South Ridge 2, Downtown Dubai. Offering a perfect blend of space, style, and convenience, this home is ideal for both end-users and investors.The apartment features a bright living area, modern open kitchen, and two bathrooms, including an en-suite in the master bedroom. Floor-to-ceiling windows fill the space with natural light, while the private balcony offers beautiful views of the vibrant Downtown skyline.Property Details:1 Bedroom2 BathroomsLargest Layout: 1129 SQFTVacant NowBright and Spacious LayoutBuilt-in WardrobesBalconyHigh-Quality FinishesCommunity Features:Swimming Pool & Fully Equipped GymChildren\u2019s Play Area24/7 Security & ConciergeRetail Outlets and Restaurants NearbyClose to Dubai Mall and Burj KhalifaLocated in the heart of Downtown Dubai, South Ridge offers a peaceful community atmosphere with easy access to world-class shopping, dining, and entertainment.Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.",
+      "amenity_names": [
+        "Balcony",
+        "Barbecue Area",
+        "Built in Wardrobes",
+        "Central A/C",
+        "Children's Play Area",
+        "Children's Pool",
+        "Security",
+        "Shared Gym",
+        "Shared Pool",
+        "View of Landmark"
+      ],
+      "payment_method": [],
+      "lead_value": 1000,
+      "details_path": "/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-south-ridge-south-ridge-2-15540180",
+      "rank_score": 89.2322769165039,
+      "bedrooms_value": 1,
+      "bathrooms_value": 2,
+      "is_pf_exclusive": false,
+      "listing_id": "CZQECJ2071HBTGBQSEP6CTRC4M",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15952302",
+      "category_id": 1,
+      "property_type": "Apartment",
+      "price": {
+        "value": 3980000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Exclusive | High Floor | Great Sea View",
+      "location": {
+        "id": "12890",
+        "full_name": "Seagate Building 3, Seagate, Mina Rashid, Dubai",
+        "coordinates": {
+          "lat": 25.284297943115234,
+          "lon": 55.2755126953125
+        },
+        "slug": "mina-rashid-seagate-seagate-building-3",
+        "path": "1.10472.11825.12890",
+        "type": "TOWER",
+        "name": "Seagate Building 3",
+        "path_name": "Dubai, Mina Rashid, Seagate"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/JM9WK7N3Q2S9MMR9X8THP85JEG/3917b86c-9070-476d-8ad9-1fd6d8db27e1/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/JM9WK7N3Q2S9MMR9X8THP85JEG/3917b86c-9070-476d-8ad9-1fd6d8db27e1/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "size": {
+        "value": 1094,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-mina-rashid-seagate-seagate-building-3-15952302",
+      "reference": "HI-S-010107",
+      "listed_date": "2025-12-30T06:43:18Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-010107%0AType%3A+Apartment%0APrice%3A+3%2C980%2C000+AED+%0ALocation%3A+Seagate+Building+3+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15952302%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 30,
+      "amenities": [
+        "AC",
+        "CP",
+        "LB",
+        "SE",
+        "VW"
+      ],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 1,
+      "has_view_360": false,
+      "rsp": 87.54509,
+      "rss": 87.54509,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "71256501041",
+      "offering_type": "Residential for Sale",
+      "video_url": "https://youtu.be/D62AmYQjT6Y",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "10472",
+          "name": "Mina Rashid",
+          "type": "COMMUNITY",
+          "slug": "mina-rashid",
+          "slug_en": "mina-rashid",
+          "level": "1"
+        },
+        {
+          "id": "11825",
+          "name": "Seagate",
+          "type": "SUBCOMMUNITY",
+          "slug": "mina-rashid-seagate",
+          "slug_en": "mina-rashid-seagate",
+          "level": "2"
+        },
+        {
+          "id": "12890",
+          "name": "Seagate Building 3",
+          "type": "TOWER",
+          "slug": "mina-rashid-seagate-seagate-building-3",
+          "slug_en": "mina-rashid-seagate-seagate-building-3",
+          "level": "3"
+        }
+      ],
+      "description": "Experience elevated coastal living in this beautifully presented 2-bedroom apartment located on a high floor in Seagate Building 3. Spanning a BUA of 1,085.75 sq. ft., this residence offers a well-balanced layout designed for comfort and functionality.The apartment features a bright open-plan living and dining area, enhanced by floor-to-ceiling windows that capture breathtaking sea views and fill the home with natural light. The modern kitchen is seamlessly integrated, offering a practical yet stylish space for everyday living.Both bedrooms are generously sized, with built-in wardrobes, while the master bedroom benefits from an en-suite bathroom. High-quality finishes throughout add to the refined feel of the home.Residents of Seagate enjoy access to premium amenities and a prime waterfront location, with easy connectivity to key destinations, dining, and leisure options.An excellent opportunity for end-users and investors seeking exclusivity, views, and a prime address.Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.",
+      "amenity_names": [
+        "Central A/C",
+        "Covered Parking",
+        "Lobby in Building",
+        "Security",
+        "View of Water"
+      ],
+      "payment_method": [],
+      "lead_value": 10,
+      "details_path": "/en/plp/buy/apartment-for-sale-dubai-mina-rashid-seagate-seagate-building-3-15952302",
+      "rank_score": 87.54508972167969,
+      "bedrooms_value": 2,
+      "bathrooms_value": 2,
+      "is_pf_exclusive": false,
+      "listing_id": "JM9WK7N3Q2S9MMR9X8THP85JEG",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15814284",
+      "category_id": 1,
+      "property_type": "Villa",
+      "price": {
+        "value": 5360000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Premium Community Living | Plus Maids | High ROI",
+      "location": {
+        "id": "13847",
+        "full_name": "Golf Lane, EMAAR South, Dubai South (Dubai World Central), Dubai",
+        "coordinates": {
+          "lat": 24.853994369506836,
+          "lon": 55.13435363769531
+        },
+        "slug": "dubai-south-dubai-world-central-emaar-south-golf-lane",
+        "path": "1.8648.8658.13847",
+        "type": "TOWER",
+        "name": "Golf Lane",
+        "path_name": "Dubai, Dubai South (Dubai World Central), EMAAR South"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KC41SYTGJT79P8GAWMNGAVRW/b55785ce-ceb6-43f3-9839-a8e80d792732/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KC41SYTGJT79P8GAWMNGAVRW/b55785ce-ceb6-43f3-9839-a8e80d792732/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "4",
+      "bathrooms": "5",
+      "size": {
+        "value": 5604,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/villa-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-lane-15814284",
+      "reference": "HI-S-009888",
+      "listed_date": "2025-12-10T11:55:16Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009888%0AType%3A+Villa%0APrice%3A+5%2C360%2C000+AED+%0ALocation%3A+Golf+Lane+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15814284%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 13,
+      "amenities": [
+        "BW",
+        "AC",
+        "CP",
+        "MR",
+        "SP",
+        "WC"
+      ],
+      "completion_status": "off_plan",
+      "furnished": "YES",
+      "property_type_id": 35,
+      "has_view_360": false,
+      "rsp": 85.701775,
+      "rss": 85.701775,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "69618628847",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "8648",
+          "name": "Dubai South (Dubai World Central)",
+          "type": "COMMUNITY",
+          "slug": "dubai-south-dubai-world-central",
+          "slug_en": "dubai-south-dubai-world-central",
+          "level": "1"
+        },
+        {
+          "id": "8658",
+          "name": "EMAAR South",
+          "type": "SUBCOMMUNITY",
+          "slug": "dubai-south-dubai-world-central-emaar-south",
+          "slug_en": "dubai-south-dubai-world-central-emaar-south",
+          "level": "2"
+        },
+        {
+          "id": "13847",
+          "name": "Golf Lane",
+          "type": "TOWER",
+          "slug": "dubai-south-dubai-world-central-emaar-south-golf-lane",
+          "slug_en": "dubai-south-dubai-world-central-emaar-south-golf-lane",
+          "level": "3"
+        }
+      ],
+      "description": "<p>This modern 4-bedroom villa with a maid\u2019s room offers a practical and spacious layout designed for family living. Located in the sought-after Golf Lane community within EMAAR South, the home provides bright interiors, well-planned living spaces, and a comfortable flow throughout.</p><p><br></p><p>Set on a generous plot within a high-quality master community, residents enjoy a peaceful environment surrounded by landscaped areas, parks, and convenient access to community facilities and retail options. This villa is ideal for buyers seeking long-term value in a well-connected and fast-growing location.</p><p><br></p><p><strong>Property Details</strong></p><p>4 Bedrooms</p><p>Maid\u2019s Room</p><p>Built-Up Area: 4,043 sq.ft</p><p>Plot Size: 5,605 sq.ft</p><p>Modern layout with spacious interiors</p><p>High-end community facilities</p><p>Attractive payment position (50% paid)</p><p><br></p><p><strong>Community Highlights</strong></p><p>Family-friendly master development</p><p>Parks, walkways &amp; landscaped green areas</p><p>Retail, dining &amp; community facilities</p><p>Easy access to major roads and Dubai\u2019s key destinations</p><p>Peaceful, well-planned neighborhood</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+      "amenity_names": [
+        "Built in Wardrobes",
+        "Central A/C",
+        "Covered Parking",
+        "Maids Room",
+        "Shared Pool",
+        "Walk-in Closet"
+      ],
+      "payment_method": [],
+      "lead_value": 1000,
+      "details_path": "/en/plp/buy/villa-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-lane-15814284",
+      "rank_score": 85.70177459716797,
+      "bedrooms_value": 4,
+      "bathrooms_value": 5,
+      "is_pf_exclusive": false,
+      "listing_id": "01KC41SYTGJT79P8GAWMNGAVRW",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15813582",
+      "category_id": 1,
+      "property_type": "Apartment",
+      "price": {
+        "value": 2800000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Fully Furnished | Vida Branded | Emaar",
+      "location": {
+        "id": "14597",
+        "full_name": "Vida Dubai Mall Tower 1, Vida Residences Dubai Mall, Downtown Dubai, Dubai",
+        "coordinates": {
+          "lat": 25.196271896362305,
+          "lon": 55.28352355957031
+        },
+        "slug": "downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1",
+        "path": "1.41.9145.14597",
+        "type": "TOWER",
+        "name": "Vida Dubai Mall Tower 1",
+        "path_name": "Dubai, Downtown Dubai, Vida Residences Dubai Mall"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KC3ZENG94J94C452NTA09MJX/043602e5-817f-4bce-96e3-1a7956727316/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KC3ZENG94J94C452NTA09MJX/043602e5-817f-4bce-96e3-1a7956727316/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "1",
+      "bathrooms": "2",
+      "size": {
+        "value": 860,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1-15813582",
+      "reference": "HI-S-009517",
+      "listed_date": "2025-12-10T11:13:44Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009517%0AType%3A+Apartment%0APrice%3A+2%2C800%2C000+AED+%0ALocation%3A+Vida+Dubai+Mall+Tower+1+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15813582%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 19,
+      "amenities": [
+        "BA",
+        "BR",
+        "BW",
+        "AC",
+        "PR",
+        "CO",
+        "CS",
+        "CP",
+        "BK",
+        "LB",
+        "SE",
+        "SY",
+        "SP",
+        "VC",
+        "BL"
+      ],
+      "completion_status": "completed",
+      "furnished": "YES",
+      "property_type_id": 1,
+      "has_view_360": false,
+      "rsp": 85.70061,
+      "rss": 85.70061,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "7192088509",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "41",
+          "name": "Downtown Dubai",
+          "type": "COMMUNITY",
+          "slug": "downtown-dubai",
+          "slug_en": "downtown-dubai",
+          "level": "1"
+        },
+        {
+          "id": "9145",
+          "name": "Vida Residences Dubai Mall",
+          "type": "SUBCOMMUNITY",
+          "slug": "downtown-dubai-vida-residences-dubai-mall",
+          "slug_en": "downtown-dubai-vida-residences-dubai-mall",
+          "level": "2"
+        },
+        {
+          "id": "14597",
+          "name": "Vida Dubai Mall Tower 1",
+          "type": "TOWER",
+          "slug": "downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1",
+          "slug_en": "downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1",
+          "level": "3"
+        }
+      ],
+      "description": "<p>Hamptons International by Emaar proudly presents this luxurious 1-bedroom apartment in Vida Residences Dubai Mall Tower 1. Located in the heart of Downtown Dubai, this mid-floor unit combines modern elegance with breathtaking Burj Khalifa , offering the perfect balance of lifestyle and investment.</p><p><br></p><p><strong>Unit Details:</strong></p><p><br></p><p>-Bedrooms: 1</p><p>-Direct access to Dubai Mall</p><p>-Size:860 SQFT</p><p>-Kitchen: Open &amp; Fully Fitted</p><p>-Furnishing: Fully Furnished</p><p><br></p><p><strong>Lifestyle &amp; Location:</strong></p><p><br></p><p>Downtown Dubai is a world-class lifestyle hub, home to Burj Khalifa, Dubai Mall, and the Dubai Fountain. Residents enjoy unrivaled shopping, dining, and entertainment\u2014all within walking distance.</p><p><br></p><p>Contact us today for more details and personalized opinion on your investments!</p><p><br></p><p>Why Choose Hamptons International?</p><p><br></p><p>With over 150 years of real estate excellence, Hamptons International by Emaar is your trusted advisor for premium Dubai properties. We deliver exclusive opportunities, expert guidance, and seamless transactions\u2014helping you achieve maximum value, whether you are buying, selling, or investing.</p>",
+      "amenity_names": [
+        "Balcony",
+        "Barbecue Area",
+        "Built in Wardrobes",
+        "Central A/C",
+        "Children's Play Area",
+        "Children's Pool",
+        "Concierge",
+        "Covered Parking",
+        "Kitchen Appliances",
+        "Lobby in Building",
+        "Security",
+        "Shared Gym",
+        "Shared Pool",
+        "Vastu-compliant",
+        "View of Landmark"
+      ],
+      "payment_method": [],
+      "lead_value": 1000,
+      "details_path": "/en/plp/buy/apartment-for-sale-dubai-downtown-dubai-vida-residences-dubai-mall-vida-dubai-mall-tower-1-15813582",
+      "rank_score": 85.70060729980469,
+      "bedrooms_value": 1,
+      "bathrooms_value": 2,
+      "is_pf_exclusive": false,
+      "listing_id": "01KC3ZENG94J94C452NTA09MJX",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15774670",
+      "category_id": 1,
+      "property_type": "Apartment",
+      "price": {
+        "value": 6950000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Full Marina View | High Floor | Large Layout",
+      "location": {
+        "id": "8995",
+        "full_name": "Vida Residences Dubai Marina, Dubai Marina, Dubai",
+        "coordinates": {
+          "lat": 25.07237434387207,
+          "lon": 55.136287689208984
+        },
+        "slug": "dubai-marina-vida-residences-dubai-marina",
+        "path": "1.50.8995",
+        "type": "TOWER",
+        "name": "Vida Residences Dubai Marina",
+        "path_name": "Dubai, Dubai Marina"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6C1WM6YVMWHDRW7G1J0Z4/1d17c2e3-9e8f-4ceb-b3ed-d9ec2c72073b/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6C1WM6YVMWHDRW7G1J0Z4/1d17c2e3-9e8f-4ceb-b3ed-d9ec2c72073b/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "size": {
+        "value": 1657,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-marina-vida-residences-dubai-marina-15774670",
+      "reference": "HI-S-009680",
+      "listed_date": "2025-12-05T12:04:41Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009680%0AType%3A+Apartment%0APrice%3A+6%2C950%2C000+AED+%0ALocation%3A+Vida+Residences+Dubai+Marina+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774670%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 23,
+      "amenities": [
+        "BA",
+        "BW",
+        "AC",
+        "CS"
+      ],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 1,
+      "has_view_360": false,
+      "rsp": 85.53262,
+      "rss": 85.53262,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "7143170153",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "50",
+          "name": "Dubai Marina",
+          "type": "COMMUNITY",
+          "slug": "dubai-marina",
+          "slug_en": "dubai-marina",
+          "level": "1"
+        },
+        {
+          "id": "8995",
+          "name": "Vida Residences Dubai Marina",
+          "type": "TOWER",
+          "slug": "dubai-marina-vida-residences-dubai-marina",
+          "slug_en": "dubai-marina-vida-residences-dubai-marina",
+          "level": "2"
+        }
+      ],
+      "description": "<p>Hamptons International is proud to present this spacious three-bedroom apartment located in the prestigious Vida Residences, Dubai Marina. This modern and bright property offers a perfect blend of luxury and comfort, featuring elegant finishes, generous living spaces, and breathtaking Marina views. Situated in one of Dubai\u2019s most sought-after waterfront communities, it provides an exceptional lifestyle with world-class amenities right at your doorstep.</p><p><br></p><p>- 3 Bedrooms</p><p>- 4 Bathrooms</p><p>- Fully Equipped Kitchen</p><p>-Rented Till 9th May 2026</p><p>-Above 40th Floor</p><p>- 2 Parking Spaces</p><p>- Full Marina View</p><p>- Full access to the hotel facilities (Infinity Pool, Gym)</p><p><br></p><p>AMENITIES AND FACILITIES:</p><p><br></p><p>- Reception &amp; Concierge service</p><p>- Common courtyard</p><p>- Cleaning service</p><p>- BBQ Area</p><p>- Jacuzzi</p><p>- Retail area</p><p>- Restaurants and Cafes</p><p>- Infinity Pool</p><p>- Steam room Sauna</p><p><br></p><p>Situated at the heart of Dubai Marina , along the idyllic waterfront promenade, Vida Dubai Marina &amp; Yacht Club is at the centre of the city\u2019s very best experiences, from yacht-filled views, to culinary experiences and amazing nightlife.</p><p><br></p><p>From Vida Dubai Marina &amp; Yacht Club it takes roughly 19 minutes to drive to Dubai Mall, 11 minutes to Palm Jumeirah, 16 minutes to Burj Al Arab and 8 minutes to The Walk JBR.</p><p><br></p><p>Dubai International Airport (DXB) is roughly 27 minutes&#39; drive and the new Al Maktoum International Airport is roughly 30 minutes&#39; drive.*</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+      "amenity_names": [
+        "Balcony",
+        "Built in Wardrobes",
+        "Central A/C",
+        "Concierge"
+      ],
+      "payment_method": [],
+      "lead_value": 1000,
+      "details_path": "/en/plp/buy/apartment-for-sale-dubai-dubai-marina-vida-residences-dubai-marina-15774670",
+      "rank_score": 85.53262329101562,
+      "bedrooms_value": 3,
+      "bathrooms_value": 4,
+      "is_pf_exclusive": false,
+      "listing_id": "01KBQ6C1WM6YVMWHDRW7G1J0Z4",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15774602",
+      "category_id": 1,
+      "property_type": "Townhouse",
+      "price": {
+        "value": 3250000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Exclusive | Facing Water Canal | Single Row",
+      "location": {
+        "id": "13153",
+        "full_name": "Nima, The Valley, Dubai",
+        "coordinates": {
+          "lat": 25.002626419067383,
+          "lon": 55.452701568603516
+        },
+        "slug": "the-valley-nima",
+        "path": "1.10757.13153",
+        "type": "SUBCOMMUNITY",
+        "name": "Nima",
+        "path_name": "Dubai, The Valley"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ673P9K8K9GRBYP0S2CGJH/8d8b0a6f-23db-48ef-9fb4-0150e472ed69/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ673P9K8K9GRBYP0S2CGJH/8d8b0a6f-23db-48ef-9fb4-0150e472ed69/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": true,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "size": {
+        "value": 1971,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/townhouse-for-sale-dubai-the-valley-nima-15774602",
+      "reference": "HI-S-007926",
+      "listed_date": "2025-12-05T12:02:02Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-007926%0AType%3A+Townhouse%0APrice%3A+3%2C250%2C000+AED+%0ALocation%3A+Nima+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774602%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 13,
+      "amenities": [
+        "BA",
+        "BR",
+        "BW",
+        "AC",
+        "PR",
+        "CO",
+        "CS",
+        "CP",
+        "BK",
+        "LB",
+        "MR",
+        "SE",
+        "SY",
+        "SP",
+        "ST",
+        "VC",
+        "BL",
+        "VW"
+      ],
+      "completion_status": "off_plan",
+      "furnished": "NO",
+      "property_type_id": 22,
+      "has_view_360": false,
+      "rsp": 85.53258,
+      "rss": 85.53258,
+      "qs": 100,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "69538455299",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "10757",
+          "name": "The Valley",
+          "type": "COMMUNITY",
+          "slug": "the-valley",
+          "slug_en": "the-valley",
+          "level": "1"
+        },
+        {
+          "id": "13153",
+          "name": "Nima",
+          "type": "SUBCOMMUNITY",
+          "slug": "the-valley-nima",
+          "slug_en": "the-valley-nima",
+          "level": "2"
+        }
+      ],
+      "description": "<p>This spacious 3-bedroom townhouse with a maids room is ideally located in Nima, The Valley. Offering modern living in a vibrant community, this home provides ample space and comfort, making it perfect for families. Enjoy easy access to top amenities and serene surroundings.</p><p><br></p><p><strong>Property Details:\u00a0</strong></p><p><br></p><p>3 bedrooms</p><p>Maids Room</p><p>On the water and Lagoons</p><p>Plot Size: 1971 sqft\u00a0</p><p>build up Size : 2348 sqft\u00a0</p><p>Handover Q3 2027\u00a0</p><p><br></p><p><strong>With Payment plan as below:\u00a0</strong></p><p><br></p><p>60% Paid by the Seller</p><p>Remaining to be paid in instalments until Handover in May 2027</p><p>completion Date: May 2027</p><p><br></p><p>Your dream home in Nima is perfectly positioned in a peaceful family sanctuary that is away from the hustle and bustle of the city, while still being well-connected to everything Dubai has to offer.</p><p><br></p><p>Live life to the full, with exceptional amenities, complemented by verdant open spaces and beautiful greenery, right on your doorstep. From relaxing evening strolls and fun-filled time with the kids, to family beach days and barbecues with friends, Nima is the ideal setting for an elevated lifestyle</p><p><br></p><p>Call Sabida now for further details.\u00a0</p><p><br></p><p>Hamptons International is part of Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.4</p>",
+      "amenity_names": [
+        "Balcony",
+        "Barbecue Area",
+        "Built in Wardrobes",
+        "Central A/C",
+        "Children's Play Area",
+        "Children's Pool",
+        "Concierge",
+        "Covered Parking",
+        "Kitchen Appliances",
+        "Lobby in Building",
+        "Maids Room",
+        "Security",
+        "Shared Gym",
+        "Shared Pool",
+        "Study",
+        "Vastu-compliant",
+        "View of Landmark",
+        "View of Water"
+      ],
+      "payment_method": [],
+      "lead_value": 10,
+      "details_path": "/en/plp/buy/townhouse-for-sale-dubai-the-valley-nima-15774602",
+      "rank_score": 85.53257751464844,
+      "bedrooms_value": 3,
+      "bathrooms_value": 4,
+      "is_pf_exclusive": false,
+      "listing_id": "01KBQ673P9K8K9GRBYP0S2CGJH",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15774825",
+      "category_id": 1,
+      "property_type": "Land",
+      "price": {
+        "value": 4020000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Motivated Seller | Multiple Plots | Near Park",
+      "location": {
+        "id": "15808",
+        "full_name": "Saih Shuiab House, Jebel Ali Hills, Jebel Ali, Dubai",
+        "coordinates": {
+          "lat": 24.89752197265625,
+          "lon": 54.98973083496094
+        },
+        "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+        "path": "1.65.914.15808",
+        "type": "TOWER",
+        "name": "Saih Shuiab House",
+        "path_name": "Dubai, Jebel Ali, Jebel Ali Hills"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6QSCNW7MR2C29J7XCNA6E/9056df95-ed07-4b39-95a1-01db529330d0/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6QSCNW7MR2C29J7XCNA6E/9056df95-ed07-4b39-95a1-01db529330d0/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": false,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": null,
+      "bathrooms": null,
+      "size": {
+        "value": 9569,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774825",
+      "reference": "HI-S-009711",
+      "listed_date": "2025-12-05T12:11:03Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009711%0AType%3A+Land%0APrice%3A+4%2C020%2C000+AED+%0ALocation%3A+Saih+Shuiab+House+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774825%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 23,
+      "amenities": [],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 5,
+      "has_view_360": false,
+      "rsp": 81.524765,
+      "rss": 81.524765,
+      "qs": 95,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "6524541334",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "65",
+          "name": "Jebel Ali",
+          "type": "COMMUNITY",
+          "slug": "jebel-ali",
+          "slug_en": "jebel-ali",
+          "level": "1"
+        },
+        {
+          "id": "914",
+          "name": "Jebel Ali Hills",
+          "type": "SUBCOMMUNITY",
+          "slug": "jebel-ali-jebel-ali-hills",
+          "slug_en": "jebel-ali-jebel-ali-hills",
+          "level": "2"
+        },
+        {
+          "id": "15808",
+          "name": "Saih Shuiab House",
+          "type": "TOWER",
+          "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "slug_en": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "level": "3"
+        }
+      ],
+      "description": "<p>Hamptons International is thrilled to present this exciting opportunity in Jebel Ali Hills, one of the most sought-after and highly appreciating communities. Jebel Ali Hills is a residential off-plan land development project by Meraas, offering among the most affordable freehold plots in the market today. Plot can be fully customized to suit investor requirements.</p><p><br></p><p><strong>NOTE: RARE AVAILABILITY OF 7 PLOTS ALTOGETHER IN THE SAME ROW AVAILABLE FOR SALE.</strong></p><p><br></p><p><strong>Property Features:</strong></p><p><br></p><ul><li>Plot Size: 9,569 sq. ft.</li><li>Villa Type: G+1 Independent</li><li>Service Charges: AED 0.27 per sq. ft. of GFA</li><li>Location Benefits: Backing the Park</li></ul><p><strong>Amenities:</strong></p><p><br></p><ul><li>Freehold Ownership</li><li>Full Architectural Freedom \u2013 No design restrictions</li><li>Mortgage Available</li><li>Handover: Ready for Immediate Construction</li><li>Landscaped Parks</li><li>Schools</li><li>Mosques</li><li>Shopping Mall</li><li>Children\u2019s Play Areas</li><li>Retail and Dining Options</li></ul><p><strong>CONNECT WITH SABIDA NOW TOO KNOW MORE DETAILS!</strong></p><p><br></p><p>Hamptons International is part of the Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+      "amenity_names": [],
+      "payment_method": [],
+      "lead_value": 225.53,
+      "details_path": "/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774825",
+      "rank_score": 81.52476501464844,
+      "bedrooms_value": null,
+      "bathrooms_value": null,
+      "is_pf_exclusive": false,
+      "listing_id": "01KBQ6QSCNW7MR2C29J7XCNA6E",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15774804",
+      "category_id": 1,
+      "property_type": "Land",
+      "price": {
+        "value": 4020000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Motivated Seller | Multiple Plots | Near Park",
+      "location": {
+        "id": "15808",
+        "full_name": "Saih Shuiab House, Jebel Ali Hills, Jebel Ali, Dubai",
+        "coordinates": {
+          "lat": 24.89752197265625,
+          "lon": 54.98973083496094
+        },
+        "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+        "path": "1.65.914.15808",
+        "type": "TOWER",
+        "name": "Saih Shuiab House",
+        "path_name": "Dubai, Jebel Ali, Jebel Ali Hills"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6P0085SZ733W1Z9C1GQ0Y/a70233a6-ad2d-42bf-9b93-583dbbd3a0a2/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6P0085SZ733W1Z9C1GQ0Y/a70233a6-ad2d-42bf-9b93-583dbbd3a0a2/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": false,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": null,
+      "bathrooms": null,
+      "size": {
+        "value": 9569,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774804",
+      "reference": "HI-S-009710",
+      "listed_date": "2025-12-05T12:10:07Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009710%0AType%3A+Land%0APrice%3A+4%2C020%2C000+AED+%0ALocation%3A+Saih+Shuiab+House+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774804%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 10,
+      "amenities": [],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 5,
+      "has_view_360": false,
+      "rsp": 81.52475,
+      "rss": 81.52475,
+      "qs": 95,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "6524541339",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "65",
+          "name": "Jebel Ali",
+          "type": "COMMUNITY",
+          "slug": "jebel-ali",
+          "slug_en": "jebel-ali",
+          "level": "1"
+        },
+        {
+          "id": "914",
+          "name": "Jebel Ali Hills",
+          "type": "SUBCOMMUNITY",
+          "slug": "jebel-ali-jebel-ali-hills",
+          "slug_en": "jebel-ali-jebel-ali-hills",
+          "level": "2"
+        },
+        {
+          "id": "15808",
+          "name": "Saih Shuiab House",
+          "type": "TOWER",
+          "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "slug_en": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "level": "3"
+        }
+      ],
+      "description": "<p>Hamptons International is thrilled to present this exciting opportunity in Jebel Ali Hills, one of the most sought-after and highly appreciating communities. Jebel Ali Hills is a residential off-plan land development project by Meraas, offering among the most affordable freehold plots in the market today. Plot can be fully customized to suit investor requirements.</p><p><br></p><p><strong>NOTE: RARE AVAILABILITY OF 7 PLOTS ALTOGETHER IN THE SAME ROW AVAILABLE FOR SALE.</strong></p><p><br></p><p><strong>Property Features:</strong></p><p><br></p><ul><li>Plot Size: 9,569 sq. ft.</li><li>Villa Type: G+1 Independent</li><li>Service Charges: AED 0.27 per sq. ft. of GFA</li><li>Location Benefits: Backing the Park</li></ul><p><strong>Amenities:</strong></p><p><br></p><ul><li>Freehold Ownership</li><li>Full Architectural Freedom \u2013 No design restrictions</li><li>Mortgage Available</li><li>Handover: Ready for Immediate Construction</li><li>Landscaped Parks</li><li>Schools</li><li>Mosques</li><li>Shopping Mall</li><li>Children\u2019s Play Areas</li><li>Retail and Dining Options</li></ul><p><strong>CONNECT WITH SABIDA NOW TOO KNOW MORE DETAILS!</strong></p><p><br></p><p>Hamptons International is part of the Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+      "amenity_names": [],
+      "payment_method": [],
+      "lead_value": 225.53,
+      "details_path": "/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774804",
+      "rank_score": 81.52474975585938,
+      "bedrooms_value": null,
+      "bathrooms_value": null,
+      "is_pf_exclusive": false,
+      "listing_id": "01KBQ6P0085SZ733W1Z9C1GQ0Y",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    },
+    {
+      "id": "15774766",
+      "category_id": 1,
+      "property_type": "Land",
+      "price": {
+        "value": 4210000,
+        "currency": "AED",
+        "period": "sell",
+        "is_hidden": false
+      },
+      "title": "Motivated Seller | Multiple Plots | Near Park",
+      "location": {
+        "id": "15808",
+        "full_name": "Saih Shuiab House, Jebel Ali Hills, Jebel Ali, Dubai",
+        "coordinates": {
+          "lat": 24.89752197265625,
+          "lon": 54.98973083496094
+        },
+        "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+        "path": "1.65.914.15808",
+        "type": "TOWER",
+        "name": "Saih Shuiab House",
+        "path_name": "Dubai, Jebel Ali, Jebel Ali Hills"
+      },
+      "images": [
+        {
+          "small": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6M65WNRPHBGB0337YV6Q1/d83e8e0a-ea74-46c1-bf3f-f0bc9bf849e9/416x272.jpg",
+          "medium": "https://static.shared.propertyfinder.ae/media/images/listing/01KBQ6M65WNRPHBGB0337YV6Q1/d83e8e0a-ea74-46c1-bf3f-f0bc9bf849e9/668x452.jpg",
+          "classification_label": ""
+        }
+      ],
+      "agent": {
+        "id": "47521",
+        "image": "https://www.propertyfinder.ae/images/pf_agent/picture/abcd13bb487a0e869c2e0c78aeb2dc4d5e0ef2e9/desktop",
+        "is_super_agent": true,
+        "name": "Sabida Eraj Ali Azharian",
+        "user_id": 11994,
+        "email": "sabidaa@hamptonsuae.com",
+        "languages": [
+          "English",
+          "Arabic",
+          "Persian/Farsi"
+        ],
+        "slug": "sabida-eraj-ali-azharian"
+      },
+      "broker": {
+        "id": "8011",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_verified": false,
+      "is_direct_from_developer": false,
+      "is_new_construction": false,
+      "is_available": true,
+      "is_featured": false,
+      "is_premium": false,
+      "is_new_insert": false,
+      "utilities_price_type": "exclusive",
+      "live_viewing": null,
+      "is_community_expert": false,
+      "is_cts": false,
+      "bedrooms": null,
+      "bathrooms": null,
+      "size": {
+        "value": 10017,
+        "unit": "sqft"
+      },
+      "share_url": "https://www.propertyfinder.ae/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774766",
+      "reference": "HI-S-009709",
+      "listed_date": "2025-12-05T12:08:57Z",
+      "contact_options": [
+        {
+          "type": "email",
+          "value": "sabidaa@hamptonsuae.com",
+          "link": "mailto:sabidaa@hamptonsuae.com",
+          "is_did": false
+        },
+        {
+          "type": "phone",
+          "value": "+971503867790",
+          "link": "tel:+971503867790",
+          "is_did": false
+        },
+        {
+          "type": "whatsapp",
+          "value": "+97145560345",
+          "link": "https://api.whatsapp.com/send?phone=+97145560345&text=Hello%2C%0AI+would+like+to+get+more+information+about+this+property%3A+%0A+%0AReference%3A+HI-S-009709%0AType%3A+Land%0APrice%3A+4%2C210%2C000+AED+%0ALocation%3A+Saih+Shuiab+House+%0ALink%3A+https%3A%2F%2Fwww.propertyfinder.ae%2Fto%2F15774766%2Fen+%0A+%0AAny+changes+made+to+this+message+will+result+in+the+enquiry+not+being+sent+to+the+agent.",
+          "is_did": false
+        }
+      ],
+      "images_count": 30,
+      "amenities": [],
+      "completion_status": "completed",
+      "furnished": "NO",
+      "property_type_id": 5,
+      "has_view_360": false,
+      "rsp": 81.52473,
+      "rss": 81.52473,
+      "qs": 95,
+      "is_exclusive": false,
+      "is_broker_project_property": false,
+      "rera": "6524541349",
+      "offering_type": "Residential for Sale",
+      "video_url": "",
+      "is_smart_ad": false,
+      "is_spotlight_listing": false,
+      "is_claimed_by_agent": false,
+      "is_under_offer_by_competitor": false,
+      "listing_level": "standard",
+      "listing_level_label": "standard",
+      "location_tree": [
+        {
+          "id": "1",
+          "name": "Dubai",
+          "type": "CITY",
+          "slug": "dubai",
+          "slug_en": "dubai",
+          "level": "0"
+        },
+        {
+          "id": "65",
+          "name": "Jebel Ali",
+          "type": "COMMUNITY",
+          "slug": "jebel-ali",
+          "slug_en": "jebel-ali",
+          "level": "1"
+        },
+        {
+          "id": "914",
+          "name": "Jebel Ali Hills",
+          "type": "SUBCOMMUNITY",
+          "slug": "jebel-ali-jebel-ali-hills",
+          "slug_en": "jebel-ali-jebel-ali-hills",
+          "level": "2"
+        },
+        {
+          "id": "15808",
+          "name": "Saih Shuiab House",
+          "type": "TOWER",
+          "slug": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "slug_en": "jebel-ali-jebel-ali-hills-saih-shuiab-house",
+          "level": "3"
+        }
+      ],
+      "description": "<p>Hamptons International is thrilled to present this exciting opportunity in Jebel Ali Hills, one of the most sought-after and highly appreciating communities. Jebel Ali Hills is a residential off-plan land development project by Meraas, offering among the most affordable freehold plots in the market today. Plot can be fully customized to suit investor requirements.</p><p><br></p><p><strong>NOTE: RARE AVAILABILITY OF 7 PLOTS ALTOGETHER IN THE SAME ROW AVAILABLE FOR SALE.</strong></p><p><br></p><p><strong>Property Features:</strong></p><p><br></p><ul><li>Plot Size: 10,017 sq. ft.</li><li>Villa Type: G+1 Independent</li><li>Service Charges: AED 0.27 per sq. ft. of GFA</li><li>Location Benefits: Backing the Park</li></ul><p><strong>Amenities:</strong></p><p><br></p><ul><li>Freehold Ownership</li><li>Full Architectural Freedom \u2013 No design restrictions</li><li>Mortgage Available</li><li>Handover: Ready for Immediate Construction</li><li>Landscaped Parks</li><li>Schools</li><li>Mosques</li><li>Shopping Mall</li><li>Children\u2019s Play Areas</li><li>Retail and Dining Options</li></ul><p><strong>CONNECT WITH SABIDA NOW TOO KNOW MORE DETAILS!</strong></p><p><br></p><p>Hamptons International is part of the Emaar Group of Companies, your all-in-one solution for premier real estate services. We cover all your sales, leasing, property management, valuations/research, and relocation needs. Let\u2019s start your journey here.</p>",
+      "amenity_names": [],
+      "payment_method": [],
+      "lead_value": 225.53,
+      "details_path": "/en/plp/buy/land-for-sale-dubai-jebel-ali-jebel-ali-hills-saih-shuiab-house-15774766",
+      "rank_score": 81.52472686767578,
+      "bedrooms_value": null,
+      "bathrooms_value": null,
+      "is_pf_exclusive": false,
+      "listing_id": "01KBQ6M65WNRPHBGB0337YV6Q1",
+      "client": {
+        "id": "7885",
+        "logo": "https://www.propertyfinder.ae/broker/0/178/98/MODE/b35698/8011-e5e32o.jpg?ctr=ae",
+        "name": "Hamptons International - T2",
+        "address": "",
+        "email": "",
+        "phone": "",
+        "slug": "hamptons-international-t2-8011"
+      },
+      "is_fhm": false,
+      "travel_time_tags": []
+    }
+  ],
+  "similar_properties": []
+}
