@@ -8,6 +8,7 @@ import json
 import os
 import sqlite3
 import time
+import uuid
 from datetime import datetime
 from typing import Optional
 
@@ -31,7 +32,8 @@ try:
         get_owner_details,
         has_owner_details_fetched,
         get_current_isoformat,
-        SESSION_FILE
+        SESSION_FILE,
+        init_owner_database
     )
 except ImportError as e:
     st.error(f"Error importing owner_fetcher: {e}")
@@ -39,6 +41,10 @@ except ImportError as e:
 
 # Setup logging
 logger = setup_logging("search_ui")
+
+# Initialize session state for persistent notifications
+if 'notifications' not in st.session_state:
+    st.session_state.notifications = []
 
 # Page config
 st.set_page_config(
@@ -97,7 +103,7 @@ def search_listings(search_query: str, search_field: str, limit: int = 100) -> p
     conn = get_db_connection_ui()
     query = f"""
     SELECT id, title, property_type, price_value, price_currency,
-           bedrooms, bathrooms, location_name, broker_name, listed_date, rera
+           bedrooms, bathrooms, location_name, broker_name, listed_date, rera, share_url
     FROM listings
     WHERE {search_field} LIKE ?
     LIMIT ?
@@ -170,19 +176,19 @@ async def fetch_owner_for_single(listing_id: str, rera: str) -> bool:
                 logger.info(f"DB update result: {success}")
             except Exception as db_error:
                 logger.error(f"Database error for RERA {rera}: {db_error}", exc_info=True)
-                st.error(f"❌ Database error: {str(db_error)}")
+                add_notification(f"❌ Database error: {str(db_error)}", "error")
                 return False
-            
+
             if success:
-                st.success(f"✅ Owner details fetched for RERA {rera}")
+                add_notification(f"✅ Owner details fetched for RERA {rera}", "success")
                 return True
             else:
-                st.error(f"❌ Database update failed for RERA {rera}")
+                add_notification(f"❌ Database update failed for RERA {rera}", "error")
                 return False
         else:
             error_msg = result.get('error', 'Unknown error')
             logger.error(f"Error fetching owner for RERA {rera}: {error_msg}")
-            st.error(f"❌ Error: {error_msg}")
+            add_notification(f"❌ Error: {error_msg}", "error")
             return False
     except Exception as e:
         logger.error(f"Exception fetching owner for RERA {rera}: {e}", exc_info=True)
@@ -273,11 +279,51 @@ def apply_filters(
 
 
 # =============================================================================
+# Notification Functions
+# =============================================================================
+
+def add_notification(message: str, type: str = "info"):
+    """Add a persistent notification to session state."""
+    notification_id = str(uuid.uuid4())
+    st.session_state.notifications.append({
+        'id': notification_id,
+        'message': message,
+        'type': type,
+        'timestamp': datetime.now()
+    })
+
+def display_notifications():
+    """Display all persistent notifications with dismiss buttons."""
+    if st.session_state.notifications:
+        for i, notification in enumerate(st.session_state.notifications):
+            col1, col2 = st.columns([10, 1])
+            with col1:
+                if notification['type'] == 'success':
+                    st.success(notification['message'])
+                elif notification['type'] == 'error':
+                    st.error(notification['message'])
+                elif notification['type'] == 'warning':
+                    st.warning(notification['message'])
+                else:
+                    st.info(notification['message'])
+            with col2:
+                if st.button("❌", key=f"dismiss_{notification['id']}", help="Dismiss notification"):
+                    st.session_state.notifications.pop(i)
+                    st.rerun()
+                    break
+
+# =============================================================================
 # Main Application
 # =============================================================================
 
 def main():
     """Main application function."""
+    # Initialize owners database
+    init_owner_database()
+
+    # Display persistent notifications
+    display_notifications()
+
     # Title
     st.title("🏠 Property Listings Search")
 
@@ -352,20 +398,26 @@ def main():
                 # Batch fetch button
                 with col2:
                     if st.button("📥 Fetch All Owner Details", key="fetch_all_btn"):
-                        unfetched = results_df[results_df['owner_fetched_at'].isna()]
+                        # Only fetch for listings that don't have owner details fetched AND have a RERA number
+                        unfetched = results_df[
+                            (results_df['owner_fetched_at'].isna()) &
+                            (results_df['rera'].notna()) &
+                            (results_df['rera'] != '')
+                        ]
                         if len(unfetched) > 0:
-                            st.info(f"Fetching owner details for {len(unfetched)} listings...")
+                            add_notification(f"Fetching owner details for {len(unfetched)} listings...", "info")
                             progress_bar = st.progress(0)
+                            success_count = 0
                             for idx, (_, row) in enumerate(unfetched.iterrows()):
                                 with st.spinner(f"Processing {idx+1}/{len(unfetched)}..."):
-                                    fetch_owner_sync(row['id'], row['rera'])
+                                    if fetch_owner_sync(row['id'], row['rera']):
+                                        success_count += 1
                                     time.sleep(3)  # Rate limit
                                     progress_bar.progress((idx + 1) / len(unfetched))
                             st.cache_data.clear()  # Clear cache after batch fetch
-                            st.success(f"✅ Fetched all {len(unfetched)} listings!")
-                            st.rerun()
+                            add_notification(f"✅ Successfully fetched {success_count}/{len(unfetched)} listings!", "success")
                         else:
-                            st.info("✅ All listings already have owner details fetched!")
+                            add_notification("✅ All listings already have owner details fetched!", "success")
                 
                 if len(results_df) > 0:
                     # Display results with owner info
@@ -394,6 +446,7 @@ def main():
                                     if st.button("🔍 Fetch Owner", key=f"fetch_{row['id']}", use_container_width=True):
                                         with st.spinner(f"⏳ Fetching for RERA {row['rera']}..."):
                                             fetch_owner_sync(row['id'], row['rera'])
+                                        st.cache_data.clear()
                                         st.rerun()
                                 elif owner_fetched:
                                     st.write("✅ Done")
@@ -402,12 +455,12 @@ def main():
                     
                     # Download option
                     display_df = results_df[[
-                        'id', 'title', 'rera', 'property_type', 'price_value', 'price_currency',
-                        'bedrooms', 'bathrooms', 'location_name', 'owner_names', 'owner_phones', 'owner_emails'
+                        'id', 'title', 'rera', 'property_type', 'price_value',
+                        'bedrooms', 'bathrooms', 'location_name', 'owner_names', 'owner_phones', 'owner_emails', 'share_url'
                     ]].copy()
                     display_df.columns = [
-                        'ID', 'Title', 'RERA', 'Type', 'Price', 'Currency', 
-                        'Beds', 'Baths', 'Location', 'Owner Names', 'Owner Phones', 'Owner Emails'
+                        'ID', 'Title', 'RERA', 'Type', 'Price',
+                        'Beds', 'Baths', 'Location', 'Owner Name', 'Owner Phone', 'Owner Emails', 'Share URL'
                     ]
                     
                     csv = display_df.to_csv(index=False)

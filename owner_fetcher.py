@@ -155,18 +155,25 @@ async def fetch_owner_for_rera(
             # Check for owner details
             all_responses = responses_for_rera + secondary_responses
             owner_details_found = utils_has_owner_details([r['text'] for r in all_responses])
-            
+
             owner_names = []
             owner_phones = []
             owner_emails = []
-            
+
             if owner_details_found:
                 response_texts = [r['text'] for r in all_responses]
                 owner_names, owner_phones, owner_emails = utils_extract_owner_details(response_texts)
-            
+
+            # Log Telegram responses for debugging
+            logger.info(f"Telegram responses for RERA {rera}:")
+            for resp in responses_for_rera:
+                logger.info(f"  Primary: {resp['text'][:200]}..." if len(resp['text']) > 200 else f"  Primary: {resp['text']}")
+            for resp in secondary_responses:
+                logger.info(f"  Secondary: {resp['text'][:200]}..." if len(resp['text']) > 200 else f"  Secondary: {resp['text']}")
+
             # Record success for rate limiter
             rate_limiter.record_success()
-            
+
             return {
                 'rera': rera,
                 'telegram_message_id': sent.id,
@@ -193,60 +200,60 @@ async def fetch_owner_for_rera(
 
 def update_db_with_owner_details(
     listing_id: str,
-    rera: str, 
-    owner_names: List[str], 
-    owner_phones: List[str], 
-    owner_emails: List[str], 
+    rera: str,
+    owner_names: List[str],
+    owner_phones: List[str],
+    owner_emails: List[str],
     db_file: str = None
 ) -> bool:
-    """Update the listings database with owner details.
-    
+    """Update the owners database with owner details.
+
     Args:
         listing_id: The listing ID to update
         rera: RERA number
         owner_names: List of owner names
         owner_phones: List of owner phone numbers
         owner_emails: List of owner email addresses
-        db_file: Optional database file path
-        
+        db_file: Optional database file path (ignored, uses owners.db)
+
     Returns:
         True if successful, False otherwise
     """
     try:
-        conn = get_db_connection(db_file)
+        conn = get_owners_db_connection()
         c = conn.cursor()
-        
+
         # Use utility functions for serialization
         names_json = serialize_for_db(owner_names)
         phones_json = serialize_for_db(owner_phones)
         emails_json = serialize_for_db(owner_emails)
         fetched_at = get_current_isoformat()
-        
-        # Check if listing exists first
-        c.execute("SELECT id FROM listings WHERE rera = ?", (rera,))
+
+        # Check if owner details exist for this listing
+        c.execute("SELECT id FROM owners WHERE listing_id = ?", (listing_id,))
         existing = c.fetchone()
-        
+
         if existing:
-            # Update existing listing
+            # Update existing owner details
             c.execute("""
-                UPDATE listings 
-                SET owner_names = ?, owner_phones = ?, owner_emails = ?, owner_fetched_at = ?
-                WHERE rera = ?
-            """, (names_json, phones_json, emails_json, fetched_at, rera))
+                UPDATE owners
+                SET rera = ?, owner_names = ?, owner_phones = ?, owner_emails = ?, fetched_at = ?
+                WHERE listing_id = ?
+            """, (rera, names_json, phones_json, emails_json, fetched_at, listing_id))
         else:
-            # Insert new listing with owner details
+            # Insert new owner details
             c.execute("""
-                INSERT INTO listings (id, rera, owner_names, owner_phones, owner_emails, owner_fetched_at)
+                INSERT INTO owners (listing_id, rera, owner_names, owner_phones, owner_emails, fetched_at)
                 VALUES (?, ?, ?, ?, ?, ?)
             """, (listing_id, rera, names_json, phones_json, emails_json, fetched_at))
-        
+
         conn.commit()
         conn.close()
-        logger.info(f"Updated DB for RERA {rera} with owner details")
+        logger.info(f"Updated owners DB for listing {listing_id} (RERA {rera}) with owner details")
         return True
-    
+
     except Exception as e:
-        logger.error(f"Error updating DB for RERA {rera}: {e}", exc_info=True)
+        logger.error(f"Error updating owners DB for listing {listing_id} (RERA {rera}): {e}", exc_info=True)
         raise
 
 
