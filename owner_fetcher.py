@@ -106,27 +106,43 @@ async def fetch_owner_for_rera(
             
             # Send message
             sent = await client.send_message(tg_to, message)
-            
-            # Wait for bot response (adaptive)
-            await asyncio.sleep(2)
-            
+
             responses_for_rera = []
             secondary_responses = []
-            
-            # Get initial response
-            response = await client.get_messages(tg_to, min_id=sent.id, limit=10)
-            if response and not isinstance(response, list):
-                response = [response] if response else []
-            
+
+            # Try to get initial response immediately, retry with delay if needed
+            response = None
+            max_retries = 3
+            retry_delay = 1.0
+
+            for attempt in range(max_retries):
+                # Get initial response
+                response = await client.get_messages(tg_to, min_id=sent.id, limit=10)
+                if response and not isinstance(response, list):
+                    response = [response] if response else []
+
+                # Check if we got a meaningful response
+                if response and len(response) > 0:
+                    # Check if response has text content or buttons
+                    has_content = any(msg.text.strip() for msg in response)
+                    has_buttons = any(hasattr(msg, 'buttons') and msg.buttons for msg in response)
+
+                    if has_content or has_buttons:
+                        break  # We have a valid response
+
+                # If no response or empty response, wait and retry
+                if attempt < max_retries - 1:
+                    await asyncio.sleep(retry_delay)
+
             if response:
                 for msg in response:
                     responses_for_rera.append({'text': msg.text, 'id': msg.id})
-            
+
             # Check for button and click if present
             if response and len(response) > 0 and hasattr(response[0], 'buttons') and response[0].buttons:
-                await asyncio.sleep(2)
+                await asyncio.sleep(1)  # Reduced from 2s
                 await response[0].click(0)  # Click first button
-                
+
                 # Get secondary response
                 secondary = await client.get_messages(tg_to, min_id=response[0].id, limit=10)
                 if secondary and not isinstance(secondary, list):
@@ -134,17 +150,17 @@ async def fetch_owner_for_rera(
                 if secondary:
                     for msg in secondary:
                         secondary_responses.append({'text': msg.text, 'id': msg.id})
-                
-                # Wait for update
-                await asyncio.sleep(4)
-                
+
+                # Wait for update (reduced from 4s)
+                await asyncio.sleep(2)
+
                 # Get updated message
                 updated_messages = await client.get_messages(tg_to, ids=response[0].id)
                 if updated_messages and not isinstance(updated_messages, list):
                     updated_messages = [updated_messages] if updated_messages else []
                 if updated_messages:
                     responses_for_rera[0]['text'] = updated_messages[0].text
-                
+
                 # Get latest message
                 latest_messages = await client.get_messages(tg_to, limit=1)
                 if latest_messages and not isinstance(latest_messages, list):

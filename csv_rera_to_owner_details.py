@@ -242,10 +242,7 @@ async def send_to_telegram(
                     'error': error
                 })
                 rate_limiter.record_failure()
-            
-            # Additional delay for safety
-            await asyncio.sleep(2)
-            
+
         except Exception as e:
             logger.error(f"Exception processing RERA {rera}: {e}")
             responses.append({

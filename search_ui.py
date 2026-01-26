@@ -327,11 +327,11 @@ def apply_filters(
 def add_notification(message: str, type: str = "info"):
     """Add a notification that auto-dismisses after 5 seconds."""
     if type == "success":
-        st.toast(message, icon="✓", duration=5)
+        st.toast(message, icon="✅", duration=5)
     elif type == "error":
-        st.toast(message, icon="✗", duration=5)
+        st.toast(message, icon="❌", duration=5)
     elif type == "warning":
-        st.toast(message, icon="⚠", duration=5)
+        st.toast(message, icon="⚠️", duration=5)
     else:
         st.toast(message, duration=5)
 
@@ -446,7 +446,10 @@ def main():
                 
                 # Batch fetch button
                 with col2:
-                    if st.button("Fetch All Owner Details", key="fetch_all_btn"):
+                    # Use a placeholder that replaces the button when clicked
+                    fetch_placeholder = st.empty()
+
+                    if fetch_placeholder.button("Fetch All Owner Details", key="fetch_all_btn"):
                         # Only fetch for listings that don't have owner details fetched AND have a RERA number
                         unfetched = results_df[
                             (results_df['owner_fetched_at'].isna()) &
@@ -454,25 +457,62 @@ def main():
                             (results_df['rera'] != '')
                         ]
                         if len(unfetched) > 0:
-                            add_notification(f"Fetching owner details for {len(unfetched)} listings...", "info")
-                            progress_bar = st.progress(0)
+                            # Replace button with progress counter
+                            fetch_placeholder.write(f"Fetching owner details... (0/{len(unfetched)})")
+
                             success_count = 0
                             for idx, (_, row) in enumerate(unfetched.iterrows()):
-                                with st.spinner(f"Processing {idx+1}/{len(unfetched)}..."):
-                                    if fetch_owner_sync(row['id'], row['rera']):
-                                        success_count += 1
-                                    time.sleep(3)  # Rate limit
-                                    progress_bar.progress((idx + 1) / len(unfetched))
+                                if fetch_owner_sync(row['id'], row['rera']):
+                                    success_count += 1
+                                # Update counter in place
+                                fetch_placeholder.write(f"Fetching owner details... ({idx+1}/{len(unfetched)})")
+
                             st.cache_data.clear()  # Clear cache after batch fetch
-                            add_notification(f"Successfully fetched {success_count}/{len(unfetched)} listings!", "success")
+                            fetch_placeholder.success(f"✅ Completed: {success_count}/{len(unfetched)} owner details fetched")
                         else:
-                            add_notification("All listings already have owner details fetched!", "success")
+                            fetch_placeholder.info("All listings already have owner details fetched!")
                 
                 if len(results_df) > 0:
+                    # Pagination setup
+                    items_per_page = 10
+                    total_pages = (len(results_df) + items_per_page - 1) // items_per_page
+
+                    # Initialize page in session state
+                    if 'page' not in st.session_state:
+                        st.session_state.page = 1
+
+                    # Page controls
+                    col1, col2, col3 = st.columns([1, 2, 1])
+                    with col1:
+                        if st.button("⬅️ Previous", disabled=st.session_state.page <= 1):
+                            st.session_state.page -= 1
+                            st.rerun()
+                    with col2:
+                        page_options = list(range(1, total_pages + 1))
+                        selected_page = st.selectbox(
+                            f"Page {st.session_state.page} of {total_pages}",
+                            options=page_options,
+                            index=st.session_state.page - 1,
+                            key="page_selector",
+                            label_visibility="collapsed"
+                        )
+                        if selected_page != st.session_state.page:
+                            st.session_state.page = selected_page
+                            st.rerun()
+                    with col3:
+                        if st.button("Next ➡️", disabled=st.session_state.page >= total_pages):
+                            st.session_state.page += 1
+                            st.rerun()
+
+                    # Get current page data
+                    start_idx = (st.session_state.page - 1) * items_per_page
+                    end_idx = min(start_idx + items_per_page, len(results_df))
+                    page_df = results_df.iloc[start_idx:end_idx]
+
                     # Display results with owner info
-                    st.subheader("Listings")
-                    
-                    for idx, row in results_df.iterrows():
+                    st.subheader(f"🏠 Property Listings (Showing {start_idx + 1}-{end_idx} of {len(results_df)})")
+
+                    for idx, row in page_df.iterrows():
                         with st.container(border=True):
                             col1, col2, col3 = st.columns([2, 1, 1])
                             
@@ -513,10 +553,26 @@ def main():
                     ]
                     
                     csv = display_df.to_csv(index=False)
+
+                    # Get the most common location name for the filename
+                    if len(results_df) > 0 and 'location_name' in results_df.columns:
+                        most_common_location = results_df['location_name'].mode()
+                        if len(most_common_location) > 0:
+                            location_name = str(most_common_location.iloc[0])
+                            # Clean the location name for filename (remove special chars, replace spaces)
+                            import re
+                            clean_location = re.sub(r'[^\w\s-]', '', location_name).strip()
+                            clean_location = re.sub(r'[-\s]+', '_', clean_location)
+                            filename_location = clean_location[:30]  # Limit length
+                        else:
+                            filename_location = "Unknown"
+                    else:
+                        filename_location = "Unknown"
+
                     st.download_button(
                         label="Download CSV",
                         data=csv,
-                        file_name=f"listings_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                        file_name=f"{filename_location}_listings_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                         mime="text/csv"
                     )
                     
