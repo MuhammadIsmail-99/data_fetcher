@@ -54,6 +54,19 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Define residential and commercial property types
+RESIDENTIAL_TYPES = [
+    'Apartment', 'Villa', 'Townhouse', 'Penthouse', 'Bungalow', 
+    'Duplex', 'Compound', 'Farm', 'Full Floor', 'Half Floor',
+    'Bulk Rent Unit', 'Bulk Sale Unit'
+]
+
+COMMERCIAL_TYPES = [
+    'Office Space', 'Retail', 'Shop', 'Show Room', 'Business Centre',
+    'Warehouse', 'Factory', 'Hotel & Hotel Apartment', 'Labor Camp',
+    'Staff Accommodation', 'Whole Building', 'Co-working space'
+]
+
 # Load environment variables
 try:
     from dotenv import load_dotenv
@@ -103,7 +116,8 @@ def search_listings(search_query: str, search_field: str, limit: int = 100) -> p
     conn = get_db_connection_ui()
     query = f"""
     SELECT id, title, property_type, price_value, price_currency,
-           bedrooms, bathrooms, location_name, broker_name, listed_date, rera, share_url
+           bedrooms, bathrooms, location_name, broker_name, listed_date, rera, share_url,
+           offering_type
     FROM listings
     WHERE {search_field} LIKE ?
     LIMIT ?
@@ -154,11 +168,11 @@ def get_filter_options() -> dict:
 async def fetch_owner_for_single(listing_id: str, rera: str) -> bool:
     """Fetch owner details for a single listing."""
     if not TELETHON_APP_ID or not TELETHON_API_HASH:
-        st.error("❌ Telegram credentials not configured. Set TELETHON_APP_ID and TELETHON_API_HASH in .env")
+        st.error("Telegram credentials not configured. Set TELETHON_APP_ID and TELETHON_API_HASH in .env")
         return False
     
     try:
-        st.info(f"🔍 Fetching owner details for RERA {rera}...")
+        st.info(f"Fetching owner details for RERA {rera}...")
         result = await fetch_owner_for_rera(rera, TELEGRAM_BOT_USER, TELETHON_APP_ID, TELETHON_API_HASH)
         logger.debug(f"Fetch result for RERA {rera}: {result}")
         
@@ -176,23 +190,23 @@ async def fetch_owner_for_single(listing_id: str, rera: str) -> bool:
                 logger.info(f"DB update result: {success}")
             except Exception as db_error:
                 logger.error(f"Database error for RERA {rera}: {db_error}", exc_info=True)
-                add_notification(f"❌ Database error: {str(db_error)}", "error")
+                add_notification(f"Database error: {str(db_error)}", "error")
                 return False
 
             if success:
-                add_notification(f"✅ Owner details fetched for RERA {rera}", "success")
+                add_notification(f"Owner details fetched for RERA {rera}", "success")
                 return True
             else:
-                add_notification(f"❌ Database update failed for RERA {rera}", "error")
+                add_notification(f"Database update failed for RERA {rera}", "error")
                 return False
         else:
             error_msg = result.get('error', 'Unknown error')
             logger.error(f"Error fetching owner for RERA {rera}: {error_msg}")
-            add_notification(f"❌ Error: {error_msg}", "error")
+            add_notification(f"Error: {error_msg}", "error")
             return False
     except Exception as e:
         logger.error(f"Exception fetching owner for RERA {rera}: {e}", exc_info=True)
-        st.error(f"❌ Error fetching owner: {str(e)}")
+        st.error(f"Error fetching owner: {str(e)}")
         return False
 
 
@@ -229,17 +243,17 @@ def display_owner_details(row: pd.Series) -> None:
             owner_emails = []
         
         if owner_names or owner_phones or owner_emails:
-            st.write("**👤 Owner Details:**")
+            st.write("**Owner Details:**")
             if owner_names:
-                st.write(f"📝 **Name:** {', '.join(owner_names)}")
+                st.write(f"**Name:** {', '.join(owner_names)}")
             if owner_phones:
-                st.write(f"📞 **Phone:** {', '.join(owner_phones)}")
+                st.write(f"**Phone:** {', '.join(owner_phones)}")
             if owner_emails:
-                st.write(f"📧 **Email:** {', '.join(owner_emails)}")
+                st.write(f"**Email:** {', '.join(owner_emails)}")
         else:
-            st.info("ℹ️ No owner details found")
+            st.info("No owner details found")
     else:
-        st.info("⏳ Owner details not fetched yet")
+        st.info("Owner details not fetched yet")
 
 
 def apply_filters(
@@ -247,11 +261,39 @@ def apply_filters(
     price_range: tuple,
     property_types: list,
     bedrooms: tuple,
-    locations: list
+    locations: list,
+    selected_categories: list = None,
+    selected_types: list = None
 ) -> pd.DataFrame:
     """Apply filters to the dataframe."""
     if df is None or len(df) == 0:
         return df
+    
+    # Category filter (Buy/Rent/Commercial) - based on offering_type
+    if selected_categories and "All" not in selected_categories:
+        def matches_category(row):
+            offering = row.get('offering_type', '') or ''
+            if 'Rent' in selected_categories and 'for Rent' in offering:
+                return True
+            if 'Buy' in selected_categories and 'for Sale' in offering:
+                return True
+            if 'Commercial Rent' in selected_categories and offering == 'Commercial for Rent':
+                return True
+            if 'Commercial Buy' in selected_categories and offering == 'Commercial for Sale':
+                return True
+            return False
+        df = df[df.apply(matches_category, axis=1)]
+    
+    # Property Type filter (Residential/Commercial) - based on property_type
+    if selected_types and "All" not in selected_types:
+        def matches_type_category(row):
+            prop_type = row.get('property_type', '') or ''
+            if 'Residential' in selected_types and prop_type in RESIDENTIAL_TYPES:
+                return True
+            if 'Commercial' in selected_types and prop_type in COMMERCIAL_TYPES:
+                return True
+            return False
+        df = df[df.apply(matches_type_category, axis=1)]
     
     # Price filter
     if price_range:
@@ -283,34 +325,19 @@ def apply_filters(
 # =============================================================================
 
 def add_notification(message: str, type: str = "info"):
-    """Add a persistent notification to session state."""
-    notification_id = str(uuid.uuid4())
-    st.session_state.notifications.append({
-        'id': notification_id,
-        'message': message,
-        'type': type,
-        'timestamp': datetime.now()
-    })
+    """Add a notification that auto-dismisses after 5 seconds."""
+    if type == "success":
+        st.toast(message, icon="✓", duration=5)
+    elif type == "error":
+        st.toast(message, icon="✗", duration=5)
+    elif type == "warning":
+        st.toast(message, icon="⚠", duration=5)
+    else:
+        st.toast(message, duration=5)
 
 def display_notifications():
-    """Display all persistent notifications with dismiss buttons."""
-    if st.session_state.notifications:
-        for i, notification in enumerate(st.session_state.notifications):
-            col1, col2 = st.columns([10, 1])
-            with col1:
-                if notification['type'] == 'success':
-                    st.success(notification['message'])
-                elif notification['type'] == 'error':
-                    st.error(notification['message'])
-                elif notification['type'] == 'warning':
-                    st.warning(notification['message'])
-                else:
-                    st.info(notification['message'])
-            with col2:
-                if st.button("❌", key=f"dismiss_{notification['id']}", help="Dismiss notification"):
-                    st.session_state.notifications.pop(i)
-                    st.rerun()
-                    break
+    """Display notifications (now handled by toast, kept for compatibility)."""
+    pass
 
 # =============================================================================
 # Main Application
@@ -325,33 +352,55 @@ def main():
     display_notifications()
 
     # Title
-    st.title("🏠 Property Listings Search")
+    st.title("Property Listings Search")
 
     # Get total count
     total_listings = get_total_count()
-    st.sidebar.metric("Total Listings", total_listings)
 
-    # Search controls
-    col1, col2 = st.columns([3, 1])
-
-    with col1:
-        search_query = st.text_input(
-            "🔍 Quick Search",
-            placeholder="Search by title, location, property type...",
-            help="Type to search in real-time"
-        )
+    # Search controls - search bar on right (70% width), dropdown in sidebar
+    col1, col2 = st.columns([3, 7])  # 30% for left space, 70% for search bar
 
     with col2:
-        search_field = st.selectbox(
-            "Search in",
-            ["title", "location_name", "property_type", "broker_name"],
-            label_visibility="collapsed"
+        search_query = st.text_input(
+            "Search",
+            placeholder="Type to search listings...",
+            help="Type to search in real-time",
+            label_visibility="visible"
         )
 
+    # Sidebar for "Search in" dropdown and filters
+    st.sidebar.metric("Total Listings", total_listings)
+    st.sidebar.subheader("Search")
+    search_field = st.sidebar.selectbox(
+        "Search in",
+        ["location_name", "title", "property_type", "broker_name"],
+        index=0
+    )
+
     # Only load filter options if user interacts
-    st.sidebar.subheader("⚙️ Filters")
+    st.sidebar.subheader("Filters")
 
     filter_options = get_filter_options()
+
+    # Category filter (Buy/Rent) - first filter
+    st.sidebar.write("**Category**")
+    category_options = ["All", "Buy", "Rent", "Commercial Buy", "Commercial Rent"]
+    selected_categories = st.sidebar.multiselect(
+        "Category",
+        category_options,
+        default=["All"],
+        help="Select Buy, Rent, or Commercial categories"
+    )
+
+    # Property Type filter (Residential/Commercial) - second filter
+    st.sidebar.write("**Property Type**")
+    type_options = ["All", "Residential", "Commercial"]
+    selected_types = st.sidebar.multiselect(
+        "Property Type",
+        type_options,
+        default=["All"],
+        help="Select Residential or Commercial property types"
+    )
 
     price_range = st.sidebar.slider(
         "Price Range",
@@ -361,7 +410,7 @@ def main():
     )
 
     property_types = st.sidebar.multiselect(
-        "Property Type",
+        "Specific Property Type",
         filter_options['property_types'],
         help="Select one or more property types"
     )
@@ -380,7 +429,7 @@ def main():
     )
 
     # Apply search
-    st.subheader("📊 Search Results")
+    st.subheader("Search Results")
 
     if search_query:
         # Only search when user types something
@@ -388,7 +437,7 @@ def main():
             results_df = search_listings(search_query, search_field)
             
             # Apply additional filters to results
-            results_df = apply_filters(results_df, price_range, property_types, bedrooms, locations)
+            results_df = apply_filters(results_df, price_range, property_types, bedrooms, locations, selected_categories, selected_types)
             
             if results_df is not None and len(results_df) > 0:
                 col1, col2 = st.columns([3, 1])
@@ -397,7 +446,7 @@ def main():
                 
                 # Batch fetch button
                 with col2:
-                    if st.button("📥 Fetch All Owner Details", key="fetch_all_btn"):
+                    if st.button("Fetch All Owner Details", key="fetch_all_btn"):
                         # Only fetch for listings that don't have owner details fetched AND have a RERA number
                         unfetched = results_df[
                             (results_df['owner_fetched_at'].isna()) &
@@ -415,13 +464,13 @@ def main():
                                     time.sleep(3)  # Rate limit
                                     progress_bar.progress((idx + 1) / len(unfetched))
                             st.cache_data.clear()  # Clear cache after batch fetch
-                            add_notification(f"✅ Successfully fetched {success_count}/{len(unfetched)} listings!", "success")
+                            add_notification(f"Successfully fetched {success_count}/{len(unfetched)} listings!", "success")
                         else:
-                            add_notification("✅ All listings already have owner details fetched!", "success")
+                            add_notification("All listings already have owner details fetched!", "success")
                 
                 if len(results_df) > 0:
                     # Display results with owner info
-                    st.subheader("📋 Listings")
+                    st.subheader("Listings")
                     
                     for idx, row in results_df.iterrows():
                         with st.container(border=True):
@@ -429,11 +478,11 @@ def main():
                             
                             with col1:
                                 st.write(f"**{row['title']}** ({row['property_type']})")
-                                st.write(f"📍 {row['location_name']}")
-                                st.write(f"💰 {row['price_value']:,.0f} {row['price_currency']}")
-                                st.write(f"🛏️ {row['bedrooms']} beds | 🚿 {row['bathrooms']} baths")
+                                st.write(f"{row['location_name']}")
+                                st.write(f"{row['price_value']:,.0f} {row['price_currency']}")
+                                st.write(f"{row['bedrooms']} beds | {row['bathrooms']} baths")
                                 if row.get('rera'):
-                                    st.write(f"🏷️ RERA: {row['rera']}")
+                                    st.write(f"RERA: {row['rera']}")
                             
                             with col2:
                                 # Owner details section
@@ -443,13 +492,13 @@ def main():
                                 # Fetch button for individual listing
                                 owner_fetched = pd.notna(row.get('owner_fetched_at'))
                                 if not owner_fetched and row.get('rera'):
-                                    if st.button("🔍 Fetch Owner", key=f"fetch_{row['id']}", use_container_width=True):
-                                        with st.spinner(f"⏳ Fetching for RERA {row['rera']}..."):
+                                    if st.button("Fetch Owner", key=f"fetch_{row['id']}", use_container_width=True):
+                                        with st.spinner(f"Fetching for RERA {row['rera']}..."):
                                             fetch_owner_sync(row['id'], row['rera'])
                                         st.cache_data.clear()
                                         st.rerun()
                                 elif owner_fetched:
-                                    st.write("✅ Done")
+                                    st.write("Done")
                     
                     st.divider()
                     
@@ -465,7 +514,7 @@ def main():
                     
                     csv = display_df.to_csv(index=False)
                     st.download_button(
-                        label="📥 Download CSV",
+                        label="Download CSV",
                         data=csv,
                         file_name=f"listings_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                         mime="text/csv"
@@ -492,11 +541,11 @@ def main():
             logger.error(f"Search error: {e}")
             st.error(f"Search error: {e}")
     else:
-        st.info("💡 Start typing in the search box to find listings. Results load instantly!")
+        st.info("Start typing in the search box to find listings. Results load instantly!")
 
     # Footer
     st.divider()
-    st.caption("💡 Instant search - loads only when you search. Filter options cached for fast performance.")
+    st.caption("Instant search - loads only when you search. Filter options cached for fast performance.")
 
 
 if __name__ == "__main__":
