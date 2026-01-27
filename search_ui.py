@@ -446,10 +446,11 @@ def main():
                 
                 # Batch fetch button
                 with col2:
-                    # Use a placeholder that replaces the button when clicked
-                    fetch_placeholder = st.empty()
+                    # Use placeholders for button and progress bar
+                    button_placeholder = st.empty()
+                    progress_placeholder = st.empty()
 
-                    if fetch_placeholder.button("Fetch All Owner Details", key="fetch_all_btn"):
+                    if button_placeholder.button("Fetch All Owner Details", key="fetch_all_btn"):
                         # Only fetch for listings that don't have owner details fetched AND have a RERA number
                         unfetched = results_df[
                             (results_df['owner_fetched_at'].isna()) &
@@ -457,20 +458,30 @@ def main():
                             (results_df['rera'] != '')
                         ]
                         if len(unfetched) > 0:
-                            # Replace button with progress counter
-                            fetch_placeholder.write(f"Fetching owner details... (0/{len(unfetched)})")
+                            # Hide button and show progress bar
+                            button_placeholder.empty()
+                            progress_bar = progress_placeholder.progress(0)
+                            status_text = progress_placeholder.empty()
 
                             success_count = 0
+                            total_count = len(unfetched)
+
                             for idx, (_, row) in enumerate(unfetched.iterrows()):
                                 if fetch_owner_sync(row['id'], row['rera']):
                                     success_count += 1
-                                # Update counter in place
-                                fetch_placeholder.write(f"Fetching owner details... ({idx+1}/{len(unfetched)})")
+
+                                # Update progress bar
+                                progress = (idx + 1) / total_count
+                                progress_bar.progress(progress)
+                                status_text.text(f"Fetching owner details... ({idx+1}/{total_count})")
 
                             st.cache_data.clear()  # Clear cache after batch fetch
-                            fetch_placeholder.success(f"✅ Completed: {success_count}/{len(unfetched)} owner details fetched")
+
+                            # Clear progress elements and show success
+                            progress_placeholder.empty()
+                            button_placeholder.success(f"✅ Completed: {success_count}/{total_count} owner details fetched")
                         else:
-                            fetch_placeholder.info("All listings already have owner details fetched!")
+                            button_placeholder.info("All listings already have owner details fetched!")
                 
                 if len(results_df) > 0:
                     # Pagination setup
