@@ -96,16 +96,25 @@ def migrate_owners_db(db_path: str) -> None:
             owner_names TEXT,
             owner_phones TEXT,
             owner_emails TEXT,
+            property_number TEXT,
             fetched_at TEXT,
             created_at TEXT DEFAULT CURRENT_TIMESTAMP
         )
     ''')
-    
+
+    # Add property_number column if it doesn't exist (for existing databases)
+    try:
+        c.execute("ALTER TABLE owners ADD COLUMN property_number TEXT")
+        print("  ✅ Added column: property_number")
+    except sqlite3.OperationalError:
+        print("  ℹ️ Column property_number already exists")
+
     # Create indexes
     indexes = [
         ("idx_owners_listing_id", "CREATE UNIQUE INDEX IF NOT EXISTS idx_owners_listing_id ON owners(listing_id)"),
         ("idx_owners_rera", "CREATE INDEX IF NOT EXISTS idx_owners_rera ON owners(rera)"),
         ("idx_owners_fetched_at", "CREATE INDEX IF NOT EXISTS idx_owners_fetched_at ON owners(fetched_at)"),
+        ("idx_owners_property_number", "CREATE INDEX IF NOT EXISTS idx_owners_property_number ON owners(property_number)"),
     ]
     
     for index_name, index_sql in indexes:

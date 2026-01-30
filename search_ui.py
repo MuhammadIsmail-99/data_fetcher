@@ -128,7 +128,7 @@ def search_listings(search_query: str, search_field: str, limit: int = 100) -> p
     # Add owner information from owners database
     owners_conn = get_owners_db_connection_ui()
     owners_df = pd.read_sql_query("""
-        SELECT listing_id, owner_names, owner_phones, owner_emails, fetched_at as owner_fetched_at
+        SELECT listing_id, owner_names, owner_phones, owner_emails, property_number, fetched_at as owner_fetched_at
         FROM owners
     """, owners_conn)
     owners_conn.close()
@@ -170,12 +170,12 @@ async def fetch_owner_for_single(listing_id: str, rera: str) -> bool:
     if not TELETHON_APP_ID or not TELETHON_API_HASH:
         st.error("Telegram credentials not configured. Set TELETHON_APP_ID and TELETHON_API_HASH in .env")
         return False
-    
+
     try:
         st.info(f"Fetching owner details for RERA {rera}...")
         result = await fetch_owner_for_rera(rera, TELEGRAM_BOT_USER, TELETHON_APP_ID, TELETHON_API_HASH)
         logger.debug(f"Fetch result for RERA {rera}: {result}")
-        
+
         if result['status'] == 'success':
             # Update database
             try:
@@ -185,7 +185,8 @@ async def fetch_owner_for_single(listing_id: str, rera: str) -> bool:
                     rera,
                     result.get('owner_names', []),
                     result.get('owner_phones', []),
-                    result.get('owner_emails', [])
+                    result.get('owner_emails', []),
+                    result.get('property_number', '')
                 )
                 logger.info(f"DB update result: {success}")
             except Exception as db_error:
@@ -231,7 +232,7 @@ def fetch_owner_sync(listing_id: str, rera: str) -> bool:
 def display_owner_details(row: pd.Series) -> None:
     """Display owner details for a listing."""
     owner_fetched = pd.notna(row.get('owner_fetched_at'))
-    
+
     if owner_fetched:
         try:
             owner_names = json.loads(row['owner_names']) if row.get('owner_names') else []
@@ -241,7 +242,7 @@ def display_owner_details(row: pd.Series) -> None:
             owner_names = []
             owner_phones = []
             owner_emails = []
-        
+
         if owner_names or owner_phones or owner_emails:
             st.write("**Owner Details:**")
             if owner_names:
@@ -252,6 +253,11 @@ def display_owner_details(row: pd.Series) -> None:
                 st.write(f"**Email:** {', '.join(owner_emails)}")
         else:
             st.info("No owner details found")
+
+        # Display property number if available
+        property_number = row.get('property_number')
+        if pd.notna(property_number) and property_number:
+            st.write(f"**Property No:** {property_number}")
     else:
         st.info("Owner details not fetched yet")
 
@@ -556,11 +562,11 @@ def main():
                     # Download option
                     display_df = results_df[[
                         'id', 'title', 'rera', 'property_type', 'price_value',
-                        'bedrooms', 'bathrooms', 'location_name', 'owner_names', 'owner_phones', 'owner_emails', 'share_url'
+                        'bedrooms', 'bathrooms', 'location_name', 'owner_names', 'owner_phones', 'owner_emails', 'property_number', 'share_url'
                     ]].copy()
                     display_df.columns = [
                         'ID', 'Title', 'RERA', 'Type', 'Price',
-                        'Beds', 'Baths', 'Location', 'Owner Name', 'Owner Phone', 'Owner Emails', 'Share URL'
+                        'Beds', 'Baths', 'Location', 'Owner Name', 'Owner Phone', 'Owner Emails', 'Property Number', 'Share URL'
                     ]
                     
                     csv = display_df.to_csv(index=False)

@@ -129,10 +129,10 @@ def init_database_indexes(conn: sqlite3.Connection) -> None:
 
 def has_owner_details(responses_text: List[str]) -> bool:
     """Check if any response contains actual owner details.
-    
+
     Args:
         responses_text: List of response text strings
-        
+
     Returns:
         True if owner details are found, False otherwise
     """
@@ -151,7 +151,42 @@ def has_owner_details(responses_text: List[str]) -> bool:
         if name_match and phone_match:
             return True
 
+        # Check if response explicitly says "Owner details unavailable"
+        if 'owner details unavailable' in t.lower() or '❌ owner details unavailable' in t.lower():
+            return False
+
     return False
+
+
+def has_owner_details_response(responses_text: List[str]) -> Tuple[bool, bool]:
+    """Check if response contains owner details or explicitly says unavailable.
+
+    Args:
+        responses_text: List of response text strings
+
+    Returns:
+        Tuple of (has_owner_details, has_unavailable_message)
+    """
+    for text in responses_text:
+        if not text:
+            continue
+        t = text.strip()
+
+        # Check if response explicitly says "Owner details unavailable"
+        if 'owner details unavailable' in t.lower() or '❌ owner details unavailable' in t.lower():
+            return (False, True)
+
+        # Check for an explicit owner block marker
+        if '👤 owner details:' in t.lower() or 'owner details:' in t.lower():
+            return (True, False)
+
+        # Check for presence of both Name and Phone fields
+        name_match = re.search(r'(📝\s*)?name\s*:\s*\S+', t, flags=re.IGNORECASE)
+        phone_match = re.search(r'(📞\s*)?phone\s*:\s*\S+', t, flags=re.IGNORECASE)
+        if name_match and phone_match:
+            return (True, False)
+
+    return (False, False)
 
 
 def extract_owner_details(responses_text: List[str]) -> Tuple[List[str], List[str], List[str]]:
@@ -202,6 +237,104 @@ def extract_owner_details(responses_text: List[str]) -> Tuple[List[str], List[st
             owner_emails.append(email)
 
     return owner_names, owner_phones, owner_emails
+
+
+def extract_property_details(responses_text: List[str]) -> Dict[str, str]:
+    """Extract property details from Telegram response text.
+
+    Extracts: property_number, property_size, rooms, is_freehold, area, project, building
+
+    Args:
+        responses_text: List of response text strings
+
+    Returns:
+        Dict with property details
+    """
+    combined_text = '\n'.join(responses_text)
+    details = {}
+
+    # Extract Property Number
+    property_number_match = re.search(
+        r'(?:🔢\s*)?Property\s*Number\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if property_number_match:
+        details['property_number'] = property_number_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Property Size
+    property_size_match = re.search(
+        r'(?:📏\s*)?Property\s*Size\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if property_size_match:
+        details['property_size'] = property_size_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Rooms
+    rooms_match = re.search(
+        r'(?:🛏️\s*)?Rooms\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if rooms_match:
+        details['rooms'] = rooms_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Is Free Hold
+    freehold_match = re.search(
+        r'(?:🏢\s*)?Is\s*Free\s*Hold\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if freehold_match:
+        details['is_freehold'] = freehold_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Area
+    area_match = re.search(
+        r'(?:📏\s*)?Area\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if area_match:
+        details['area'] = area_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Project
+    project_match = re.search(
+        r'(?:📏\s*)?Project\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if project_match:
+        details['project'] = project_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Building
+    building_match = re.search(
+        r'(?:🏢\s*)?Building\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if building_match:
+        details['building'] = building_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Property Type
+    property_type_match = re.search(
+        r'(?:📦\s*)?Property\s*Type\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if property_type_match:
+        details['property_type'] = property_type_match.group(1).strip().split('\n')[0].strip()
+
+    # Extract Property Sub Type
+    property_sub_type_match = re.search(
+        r'(?:📦\s*)?Property\s*Sub\s*Type\s*:\s*(.+)',
+        combined_text,
+        flags=re.IGNORECASE
+    )
+    if property_sub_type_match:
+        details['property_sub_type'] = property_sub_type_match.group(1).strip().split('\n')[0].strip()
+
+    return details
 
 
 # =============================================================================

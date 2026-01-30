@@ -29,7 +29,9 @@ from utils import (
     fetch_owner_for_rera,
     update_db_with_owner_details,
     has_owner_details,
+    has_owner_details_response,
     extract_owner_details,
+    extract_property_details,
     setup_logging,
     RateLimiter,
     validate_rera,
@@ -204,19 +206,21 @@ async def send_to_telegram(
                 owner_names = result.get('owner_names', [])
                 owner_phones = result.get('owner_phones', [])
                 owner_emails = result.get('owner_emails', [])
-                
+                property_number = result.get('property_number', '')
+
                 # Update database with owner details
                 update_db_with_owner_details(
                     listing.get('id', ''),
                     rera,
                     owner_names,
                     owner_phones,
-                    owner_emails
+                    owner_emails,
+                    property_number
                 )
-                
+
                 # Add to tracking
                 add_used_rera(rera)
-                
+
                 resp_data = {
                     'rera': rera,
                     'telegram_message_id': result.get('telegram_message_id'),
@@ -228,6 +232,7 @@ async def send_to_telegram(
                     'owner_names': owner_names,
                     'owner_phones': owner_phones,
                     'owner_emails': owner_emails,
+                    'property_number': property_number,
                     'status': 'completed'
                 }
                 responses.append(resp_data)
@@ -333,7 +338,7 @@ async def get_owner_details(
     # Extract owner details from responses and merge with listing data
     owners_list = []
     csv_data = []
-    
+
     for resp in responses:
         rera = resp.get('rera')
         # Find the original listing
@@ -342,6 +347,7 @@ async def get_owner_details(
         owner_names = resp.get('owner_names', [])
         owner_phones = resp.get('owner_phones', [])
         owner_emails = resp.get('owner_emails', [])
+        property_number = resp.get('property_number', '')
 
         # For CSV, concatenate with semicolons
         owner_name_str = '; '.join(owner_names) if owner_names else ''
@@ -354,6 +360,7 @@ async def get_owner_details(
             'owner_names': owner_names,
             'owner_phones': owner_phones,
             'owner_emails': owner_emails,
+            'property_number': property_number,
             'full_response': resp
         }
         owners_list.append(owner_data)
@@ -364,6 +371,7 @@ async def get_owner_details(
         # Prepare CSV row
         csv_row = {
             'RERA': listing.get('rera', ''),
+            'Property Number': property_number,
             'owner name': owner_name_str,
             'owner pNo': owner_phone_str,
             'owner email': owner_email_str,
@@ -399,7 +407,7 @@ async def get_owner_details(
     # Save to CSV
     output_csv_file = output_json_file.replace('.json', '.csv')
     with open(output_csv_file, 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['RERA No.', 'Unit No.', 'Rooms', 'Size (m²)', 'Owner Name', 'Phone', 'Email', 'Share URL']
+        fieldnames = ['RERA No.', 'Property Number', 'Unit No.', 'Rooms', 'Size (m²)', 'Owner Name', 'Phone', 'Email', 'Share URL']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(filtered_csv_data)

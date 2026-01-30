@@ -16,7 +16,9 @@ from utils import (
     get_db_connection,
     get_owners_db_connection,
     has_owner_details as utils_has_owner_details,
+    has_owner_details_response,
     extract_owner_details as utils_extract_owner_details,
+    extract_property_details,
     serialize_for_db,
     deserialize_from_db,
     RateLimiter,
@@ -138,8 +140,12 @@ async def fetch_owner_for_rera(
                 for msg in response:
                     responses_for_rera.append({'text': msg.text, 'id': msg.id})
 
-            # Check for button and click if present
-            if response and len(response) > 0 and hasattr(response[0], 'buttons') and response[0].buttons:
+            # Check if initial response says "owner details unavailable" - if so, skip button click and waiting
+            initial_text = response[0].text if response and len(response) > 0 else ""
+            skip_button_click = 'owner details unavailable' in initial_text.lower() or '❌ owner details unavailable' in initial_text.lower()
+
+            # Check for button and click if present (but skip if unavailable detected)
+            if response and len(response) > 0 and hasattr(response[0], 'buttons') and response[0].buttons and not skip_button_click:
                 await asyncio.sleep(1)  # Reduced from 2s
                 await response[0].click(0)  # Click first button
 
@@ -167,10 +173,13 @@ async def fetch_owner_for_rera(
                     latest_messages = [latest_messages] if latest_messages else []
                 if latest_messages and latest_messages[0].id != response[0].id:
                     secondary_responses.append({'text': latest_messages[0].text, 'id': latest_messages[0].id})
+            elif skip_button_click:
+                logger.debug(f"Skipping button click for RERA {rera} - owner details unavailable detected")
             
             # Check for owner details
             all_responses = responses_for_rera + secondary_responses
-            owner_details_found = utils_has_owner_details([r['text'] for r in all_responses])
+            # Use new function that detects both available and unavailable cases
+            owner_details_found, has_unavailable = has_owner_details_response([r['text'] for r in all_responses])
 
             owner_names = []
             owner_phones = []
@@ -180,12 +189,26 @@ async def fetch_owner_for_rera(
                 response_texts = [r['text'] for r in all_responses]
                 owner_names, owner_phones, owner_emails = utils_extract_owner_details(response_texts)
 
+            # If "owner details unavailable" was detected, we know there's no owner info
+            # No need to wait for more responses
+            if has_unavailable:
+                logger.info(f"No owner details available for RERA {rera}")
+
+            # Extract property details (including property number)
+            response_texts_all = [r['text'] for r in all_responses]
+            property_details = extract_property_details(response_texts_all)
+            property_number = property_details.get('property_number', '')
+
             # Log Telegram responses for debugging
             logger.info(f"Telegram responses for RERA {rera}:")
             for resp in responses_for_rera:
                 logger.info(f"  Primary: {resp['text'][:200]}..." if len(resp['text']) > 200 else f"  Primary: {resp['text']}")
             for resp in secondary_responses:
                 logger.info(f"  Secondary: {resp['text'][:200]}..." if len(resp['text']) > 200 else f"  Secondary: {resp['text']}")
+
+            # Log extracted property number
+            if property_number:
+                logger.info(f"Extracted property number: {property_number} for RERA {rera}")
 
             # Record success for rate limiter
             rate_limiter.record_success()
@@ -200,6 +223,8 @@ async def fetch_owner_for_rera(
                 'owner_names': owner_names,
                 'owner_phones': owner_phones,
                 'owner_emails': owner_emails,
+                'property_number': property_number,
+                'property_details': property_details,
                 'status': 'success'
             }
     
@@ -220,6 +245,7 @@ def update_db_with_owner_details(
     owner_names: List[str],
     owner_phones: List[str],
     owner_emails: List[str],
+    property_number: str = None,
     db_file: str = None
 ) -> bool:
     """Update the owners database with owner details.
@@ -230,6 +256,7 @@ def update_db_with_owner_details(
         owner_names: List of owner names
         owner_phones: List of owner phone numbers
         owner_emails: List of owner email addresses
+        property_number: Property number from Telegram response
         db_file: Optional database file path (ignored, uses owners.db)
 
     Returns:
@@ -253,19 +280,21 @@ def update_db_with_owner_details(
             # Update existing owner details
             c.execute("""
                 UPDATE owners
-                SET rera = ?, owner_names = ?, owner_phones = ?, owner_emails = ?, fetched_at = ?
+                SET rera = ?, owner_names = ?, owner_phones = ?, owner_emails = ?, 
+                    property_number = ?, fetched_at = ?
                 WHERE listing_id = ?
-            """, (rera, names_json, phones_json, emails_json, fetched_at, listing_id))
+            """, (rera, names_json, phones_json, emails_json, property_number, fetched_at, listing_id))
         else:
             # Insert new owner details
             c.execute("""
-                INSERT INTO owners (listing_id, rera, owner_names, owner_phones, owner_emails, fetched_at)
-                VALUES (?, ?, ?, ?, ?, ?)
-            """, (listing_id, rera, names_json, phones_json, emails_json, fetched_at))
+                INSERT INTO owners (listing_id, rera, owner_names, owner_phones, owner_emails, 
+                                    property_number, fetched_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (listing_id, rera, names_json, phones_json, emails_json, property_number, fetched_at))
 
         conn.commit()
         conn.close()
-        logger.info(f"Updated owners DB for listing {listing_id} (RERA {rera}) with owner details")
+        logger.info(f"Updated owners DB for listing {listing_id} (RERA {rera}) with property_number: {property_number}")
         return True
 
     except Exception as e:
@@ -353,10 +382,10 @@ def has_owner_details_fetched(listing_id: str) -> bool:
 
 def get_owner_details(listing_id: str) -> Optional[Dict]:
     """Get owner details for a listing.
-    
+
     Args:
         listing_id: The listing ID to look up
-        
+
     Returns:
         Dict with owner details or None if not found
     """
@@ -364,7 +393,7 @@ def get_owner_details(listing_id: str) -> Optional[Dict]:
         conn = get_owners_db_connection()
         c = conn.cursor()
         c.execute(
-            "SELECT owner_names, owner_phones, owner_emails, fetched_at FROM owners WHERE listing_id = ?", 
+            "SELECT owner_names, owner_phones, owner_emails, property_number, fetched_at FROM owners WHERE listing_id = ?",
             (listing_id,)
         )
         row = c.fetchone()
@@ -379,7 +408,8 @@ def get_owner_details(listing_id: str) -> Optional[Dict]:
                 'names': owner_names,
                 'phones': owner_phones,
                 'emails': owner_emails,
-                'fetched_at': row[3]
+                'property_number': row[3],
+                'fetched_at': row[4]
             }
         return None
     except Exception as e:
@@ -396,7 +426,7 @@ def init_owner_database() -> None:
     """Initialize the owners database with proper schema and indexes."""
     conn = get_owners_db_connection()
     c = conn.cursor()
-    
+
     c.execute('''
         CREATE TABLE IF NOT EXISTS owners (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -405,16 +435,24 @@ def init_owner_database() -> None:
             owner_names TEXT,
             owner_phones TEXT,
             owner_emails TEXT,
+            property_number TEXT,
             fetched_at TEXT,
             created_at TEXT DEFAULT CURRENT_TIMESTAMP
         )
     ''')
-    
+
+    # Add property_number column if it doesn't exist (for existing databases)
+    try:
+        c.execute("ALTER TABLE owners ADD COLUMN property_number TEXT")
+    except Exception:
+        pass  # Column already exists
+
     # Create indexes
     c.execute('CREATE INDEX IF NOT EXISTS idx_owners_listing_id ON owners(listing_id)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_owners_rera ON owners(rera)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_owners_fetched_at ON owners(fetched_at)')
-    
+    c.execute('CREATE INDEX IF NOT EXISTS idx_owners_property_number ON owners(property_number)')
+
     conn.commit()
     conn.close()
     logger.info("Owners database initialized")
