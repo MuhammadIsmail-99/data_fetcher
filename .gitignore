@@ -2,6 +2,11 @@
 *.db
 *.db-journal
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 # Python cache
 __pycache__/
 *.py[cod]
